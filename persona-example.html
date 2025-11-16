@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Persona: Sarah Johnson - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white;
+            }
+            main {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+        }
+
+        .example-notice {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .example-notice h3 {
+            margin: 0 0 var(--spacing-sm) 0;
+            color: white;
+        }
+
+        .print-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            margin: var(--spacing-xl) 0;
+            flex-wrap: wrap;
+        }
+
+        @media print {
+            .example-notice,
+            .print-actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav class="no-print">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="personas.html">Personas</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="example-notice no-print">
+            <h3>📋 Example Persona</h3>
+            <p>This is a sample persona created using real user research data to demonstrate the persona development process.</p>
+        </div>
+
+        <div class="print-actions no-print">
+            <button onclick="window.print()" class="btn btn-primary">🖨️ Print / Save as PDF</button>
+            <a href="personas.html" class="btn">← Back to Persona Builder</a>
+            <a href="personas.html#persona-form-section" class="btn btn-secondary">Create Your Own Persona</a>
+        </div>
+
+        <div class="persona-preview-card">
+            <div class="preview-header">
+                <img src="assets/persona-sarah-johnson.svg" alt="Sarah Johnson" class="preview-photo">
+                <div class="preview-header-info">
+                    <h2>Sarah Johnson</h2>
+                    <p class="preview-role">Marketing Coordinator</p>
+                    <p class="preview-type">General Employee</p>
+                </div>
+            </div>
+
+            <div class="preview-quote">
+                "I don't have time to dig through pages of HR documents. I just need a quick answer so I can get back to work."
+            </div>
+
+            <div class="preview-section">
+                <h3>Demographics</h3>
+                <ul>
+                    <li><strong>Age:</strong> 25-34</li>
+                    <li><strong>Tenure:</strong> 2-5 years</li>
+                    <li><strong>Department:</strong> Marketing</li>
+                    <li><strong>Work Location:</strong> Hybrid (3 days office, 2 days remote)</li>
+                    <li><strong>Technical Proficiency:</strong> Medium (Average technical skills)</li>
+                </ul>
+            </div>
+
+            <div class="preview-section">
+                <h3>Goals & Motivations</h3>
+                <ul>
+                    <li>Get quick answers to HR questions without interrupting her workflow</li>
+                    <li>Understand her benefits and entitlements clearly</li>
+                    <li>Minimize time spent on administrative tasks so she can focus on creative work</li>
+                </ul>
+                <p><strong>Key Motivations:</strong> Sarah is driven by efficiency and creativity. She wants to excel at her marketing projects and sees HR tasks as necessary but time-consuming distractions. She values tools that respect her time and provide straightforward answers.</p>
+            </div>
+
+            <div class="preview-section">
+                <h3>Pain Points & Frustrations</h3>
+
+                <div class="pain-point">
+                    <strong>HR information is scattered across multiple systems and hard to find</strong>
+                    <blockquote>"I checked the intranet, then Workday, then had to email HR. It took me 45 minutes just to find out how to request remote work approval. That's almost an hour of my day gone."</blockquote>
+                </div>
+
+                <div class="pain-point">
+                    <strong>Long wait times for simple HR questions</strong>
+                    <blockquote>"I emailed HR asking about my remaining PTO days on Monday. I didn't get a response until Thursday. By then I'd already had to tell my manager I wasn't sure if I could take the days off."</blockquote>
+                </div>
+
+                <div class="pain-point">
+                    <strong>HR policies are written in confusing legal language</strong>
+                    <blockquote>"The parental leave policy is 12 pages long and full of terms I don't understand. I just wanted to know: if I have a baby, how much time can I take off and will I get paid?"</blockquote>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <h3>Behaviors & Preferences</h3>
+
+                <p><strong>Current HR Information Sources:</strong></p>
+                <ul>
+                    <li>Search company intranet</li>
+                    <li>Check Workday/HRIS</li>
+                    <li>Ask colleagues</li>
+                    <li>Ask HR directly (email/phone)</li>
+                    <li>Google it / external search</li>
+                </ul>
+
+                <p><strong>Preferred Communication Channels:</strong></p>
+                <ul>
+                    <li>Slack/Teams chat</li>
+                    <li>Email</li>
+                    <li>Self-service tools</li>
+                </ul>
+
+                <p><strong>Observed Behaviors:</strong> Sarah typically tries to find information herself before asking others. She starts with a Google search or intranet search, then checks Workday. If she can't find an answer in 5-10 minutes, she'll ask a colleague who's been at the company longer. Only as a last resort will she email HR, because she knows it might take days to get a response. She prefers asynchronous communication so she can multitask. During interviews, she had the HR portal, Workday, and Slack all open simultaneously, switching between them frequently.</p>
+            </div>
+
+            <div class="preview-section">
+                <h3>Needs from HR AI Assistant</h3>
+                <ul>
+                    <li>Instant, accurate answers to common HR questions available 24/7, especially outside business hours</li>
+                    <li>Personalized information specific to her situation (her PTO balance, her benefits, her location's policies)</li>
+                    <li>Plain-language explanations without HR jargon or legal terminology</li>
+                </ul>
+                <p><strong>Success Criteria:</strong> Sarah will consider the HR AI Assistant successful if she can get answers to 80% of her HR questions in under 2 minutes, without having to leave Slack or Teams. She should feel confident the information is current and accurate, and she should be able to easily escalate to a human when needed.</p>
+            </div>
+
+            <div class="preview-section">
+                <h3>Use Case Scenarios</h3>
+
+                <p><strong>Scenario 1:</strong> It's 8 PM on a Sunday evening and Sarah is planning her summer vacation with friends. She needs to know how many PTO days she has left and whether she can take off the week of July 15-19 without manager pre-approval, so she can commit to the vacation rental.</p>
+
+                <p><strong>Scenario 2:</strong> Sarah's friend just announced she's pregnant and Sarah is wondering about her own company's parental leave benefits. She wants to understand what would be available to her when she decides to start a family, so she can plan financially.</p>
+
+                <p><strong>Scenario 3:</strong> Sarah's dentist called to reschedule her appointment to a Wednesday afternoon. She needs to quickly check if she has to use PTO for a 2-hour dentist appointment or if it's covered under sick time, so she can confirm with the dentist's office.</p>
+            </div>
+
+            <div class="preview-section preview-research">
+                <h3>Research Validation</h3>
+                <p><strong>Interviews Conducted:</strong> 8</p>
+                <p><strong>Research Methods:</strong> User interviews, Contextual observation, Journey mapping workshop</p>
+                <p><strong>Notes:</strong> Sarah represents our largest user segment (45% of employees): individual contributors aged 25-40 with 2-7 years tenure. This persona was synthesized from 8 in-depth interviews with marketing, sales, and operations staff. All quotes are verbatim from interview transcripts. Pain points were validated across 6 of 8 interviews. The "scattered information" pain point was mentioned by every single interviewee, making it our highest-priority problem to solve.</p>
+            </div>
+
+            <div class="preview-section">
+                <h3>Design Implications</h3>
+                <div class="alert info">
+                    <h4>Key Insights for Product Design</h4>
+                    <ul>
+                        <li><strong>Speed is critical:</strong> Sarah's 2-minute threshold means we must prioritize instant response times over complex features</li>
+                        <li><strong>Personalization matters:</strong> Generic answers won't work - "You have 12 PTO days left" is more valuable than "Company policy allows 15 PTO days per year"</li>
+                        <li><strong>Context integration:</strong> Sarah won't adopt a standalone tool - integration with Slack/Teams is a must-have, not nice-to-have</li>
+                        <li><strong>Plain language requirement:</strong> Our content strategy must translate HR policies into conversational, jargon-free responses</li>
+                        <li><strong>Self-service preference:</strong> Sarah tries multiple sources before asking for help - our system should be her first stop, not her last resort</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <h3>Quotes from User Research</h3>
+                <blockquote style="margin: 1rem 0; padding: 1rem; background: var(--gray-50); border-left: 3px solid var(--primary-blue);">
+                    "If I can't find the answer in 5 minutes, I just give up and send an email to HR. Then I forget about it and have to ask them again a week later when they finally respond."
+                    <br><br>
+                    "I wish there was a chatbot or something that could just tell me 'Yes, you have enough PTO' or 'No, you need manager approval for that.' I don't need a 10-page policy document."
+                    <br><br>
+                    "The worst part is not knowing if the information I found is even current. I found a PDF about remote work policy from 2019. Is that still valid? Who knows?"
+                    <br><br>
+                    "I asked my colleague Maria about parental leave because she just had a baby. But her situation was different from mine because she's in California and I'm in New York. The policies are totally different."
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="print-actions no-print" style="margin-top: var(--spacing-2xl);">
+            <button onclick="window.print()" class="btn btn-primary">🖨️ Print / Save as PDF</button>
+            <a href="personas.html" class="btn">← Back to Persona Builder</a>
+            <a href="personas.html#persona-form-section" class="btn btn-secondary">Create Your Own Persona</a>
+        </div>
+
+        <div class="alert info no-print" style="margin-top: var(--spacing-xl);">
+            <h3>How to Use This Example</h3>
+            <p><strong>For Team Alignment:</strong> Share this persona in meetings to build empathy. Ask "Would this solution help Sarah?" when evaluating features.</p>
+            <p><strong>For Requirements:</strong> Every user story should reference which persona it serves. "As Sarah (Employee Persona), I want..."</p>
+            <p><strong>For Design Decisions:</strong> When choosing between features, ask which one better serves Sarah's need for speed and simplicity.</p>
+            <p><strong>For Testing:</strong> Recruit test participants who match Sarah's profile. Ask them to complete Sarah's scenarios.</p>
+            <p><strong>To Print:</strong> Click the "Print / Save as PDF" button above. Your browser will let you save as PDF.</p>
+        </div>
+    </main>
+
+    <footer class="no-print">
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Example Persona - Created from Real User Research Data</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

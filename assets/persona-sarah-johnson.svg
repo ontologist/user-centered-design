@@ -1,0 +1,52 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#e0f2fe"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="320" rx="45" ry="60" fill="#fcd6b8"/>
+
+  <!-- Shoulders/Shirt -->
+  <path d="M 120 380 Q 120 340, 155 320 L 245 320 Q 280 340, 280 380 Z" fill="#3b82f6"/>
+  <rect x="0" y="360" width="400" height="40" fill="#3b82f6"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="80" ry="95" fill="#fcd6b8"/>
+
+  <!-- Hair -->
+  <ellipse cx="200" cy="140" rx="85" ry="70" fill="#6b4423"/>
+  <path d="M 115 150 Q 100 120, 110 100 Q 130 90, 150 110 Z" fill="#6b4423"/>
+  <path d="M 285 150 Q 300 120, 290 100 Q 270 90, 250 110 Z" fill="#6b4423"/>
+  <ellipse cx="200" cy="100" rx="75" ry="45" fill="#6b4423"/>
+
+  <!-- Face details -->
+  <!-- Eyes -->
+  <ellipse cx="170" cy="170" rx="20" ry="25" fill="white"/>
+  <ellipse cx="230" cy="170" rx="20" ry="25" fill="white"/>
+  <circle cx="170" cy="175" r="12" fill="#4a3728"/>
+  <circle cx="230" cy="175" r="12" fill="#4a3728"/>
+  <circle cx="173" cy="172" r="6" fill="black"/>
+  <circle cx="233" cy="172" r="6" fill="black"/>
+  <circle cx="175" cy="170" r="3" fill="white"/>
+  <circle cx="235" cy="170" r="3" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M 150 155 Q 170 150, 185 155" stroke="#4a3728" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 215 155 Q 230 150, 250 155" stroke="#4a3728" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M 195 195 L 200 205 L 205 195" stroke="#e5b299" stroke-width="2" fill="none"/>
+
+  <!-- Mouth - friendly smile -->
+  <path d="M 180 225 Q 200 235, 220 225" stroke="#d4826f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Blush -->
+  <ellipse cx="155" cy="200" rx="15" ry="8" fill="#ffa5a5" opacity="0.4"/>
+  <ellipse cx="245" cy="200" rx="15" ry="8" fill="#ffa5a5" opacity="0.4"/>
+
+  <!-- Earrings -->
+  <circle cx="125" cy="195" r="6" fill="#ffd700" stroke="#d4af37" stroke-width="1"/>
+  <circle cx="275" cy="195" r="6" fill="#ffd700" stroke="#d4af37" stroke-width="1"/>
+
+  <!-- Collar detail -->
+  <path d="M 180 330 L 200 345 L 220 330" fill="white" opacity="0.8"/>
+</svg>
