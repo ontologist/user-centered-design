@@ -20,13 +20,14 @@ All links in the website have been verified and fixed. This includes:
 
 All external links point to real, authoritative sources on persona development and UX research:
 
-### personas.html
+### personas.html (Updated November 16, 2025)
 - ✅ https://www.nngroup.com/articles/persona/ - Nielsen Norman Group (UX authority)
-- ✅ https://www.interaction-design.org/literature/topics/personas - IxDF (design education)
-- ✅ https://www.designkit.org/methods/personas - IDEO (design thinking leaders)
-- ✅ https://www.gov.uk/service-manual/user-research/researching-user-needs - GOV.UK (government standards)
-- ✅ https://www.uxmatters.com/mt/archives/2007/09/creating-personas.php - UX Matters (UX publication)
-- ✅ https://mailchimp.com/resources/persona-research/ - Mailchimp (real-world example)
+- ✅ https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them - IxDF Persona Guide
+- ✅ https://www.designkit.org/methods - IDEO Design Kit Methods Library
+- ✅ https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs - GOV.UK User Research
+- ✅ https://mailchimp.com/resources/how-to-create-a-user-persona-ux/ - Mailchimp UX Personas Guide
+
+**Note:** 4 links were updated from 404 errors to working URLs on November 16, 2025
 
 **Note:** No fictitious or placeholder links exist on the site.
 
