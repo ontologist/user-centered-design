@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generation Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>PDF Generation Test</h1>
+    <p>This page tests that jsPDF library loads correctly and can generate PDFs.</p>
+
+    <button onclick="testPDF()" style="padding: 10px 20px; background: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Generate Test PDF
+    </button>
+
+    <div id="status" style="margin-top: 20px; padding: 10px; background: #f3f4f6; border-radius: 5px;"></div>
+
+    <script>
+        function testPDF() {
+            const statusDiv = document.getElementById('status');
+
+            try {
+                statusDiv.innerHTML = '⏳ Testing PDF generation...';
+
+                // Check if jsPDF loaded
+                if (typeof window.jspdf === 'undefined') {
+                    statusDiv.innerHTML = '❌ Error: jsPDF library not loaded!';
+                    statusDiv.style.background = '#fee2e2';
+                    return;
+                }
+
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+
+                // Add some test content
+                doc.setFontSize(20);
+                doc.text('PDF Generation Test', 20, 20);
+
+                doc.setFontSize(12);
+                doc.text('This is a test PDF generated from the persona builder.', 20, 40);
+                doc.text('If you can see this PDF, the generation is working correctly!', 20, 50);
+
+                doc.setFontSize(10);
+                doc.text('Generated: ' + new Date().toLocaleString(), 20, 70);
+
+                // Save the PDF
+                doc.save('test-pdf-generation.pdf');
+
+                statusDiv.innerHTML = '✅ Success! PDF generated and downloaded.<br>Check your downloads folder for "test-pdf-generation.pdf"';
+                statusDiv.style.background = '#d1fae5';
+
+            } catch (error) {
+                statusDiv.innerHTML = '❌ Error generating PDF: ' + error.message;
+                statusDiv.style.background = '#fee2e2';
+                console.error('PDF Error:', error);
+            }
+        }
+
+        // Test if library loaded on page load
+        window.addEventListener('load', function() {
+            const statusDiv = document.getElementById('status');
+            if (typeof window.jspdf !== 'undefined') {
+                statusDiv.innerHTML = '✅ jsPDF library loaded successfully. Click button to test PDF generation.';
+                statusDiv.style.background = '#dbeafe';
+            } else {
+                statusDiv.innerHTML = '❌ jsPDF library failed to load. Check internet connection.';
+                statusDiv.style.background = '#fee2e2';
+            }
+        });
+    </script>
+</body>
+</html>
