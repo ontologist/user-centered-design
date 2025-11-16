@@ -42,6 +42,12 @@ This project follows a strict user-centered design process to ensure we build th
 
 This site is deployed using GitHub Pages and serves as the official requirements documentation for the project.
 
+## Project Team
+
+**HCI/LLM Consultant:** Yuri Tijerino (ontologist@gmail.com)
+
+This website was developed to provide a structured, research-backed approach to user-centered design for the HR AI Assistant project, ensuring user needs drive development decisions.
+
 ## Last Updated
 
 November 16, 2025
