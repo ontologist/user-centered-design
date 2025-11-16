@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 5: Implement - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html" class="active">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="phase-header implement-phase">
+            <div class="phase-number-large">5</div>
+            <div class="phase-title">
+                <h1>Implement Phase</h1>
+                <p>Launching, Monitoring, and Continuously Improving</p>
+            </div>
+        </div>
+
+        <section class="phase-content">
+            <h2>Phase Overview</h2>
+            <p>The Implement phase brings the validated solution to production. But it doesn't end at launch - we monitor performance, gather feedback, and continuously improve based on real-world usage.</p>
+
+            <div class="phase-objectives">
+                <h3>Key Objectives</h3>
+                <ul>
+                    <li>Build production-ready system based on validated prototype</li>
+                    <li>Plan and execute phased rollout</li>
+                    <li>Train users and stakeholders</li>
+                    <li>Monitor performance and user adoption</li>
+                    <li>Gather ongoing feedback</li>
+                    <li>Iterate and improve continuously</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Rollout Strategy</h2>
+
+            <div class="rollout-approach">
+                <h3>Recommended: Phased Rollout</h3>
+                <p>Reduce risk by launching to progressively larger groups</p>
+
+                <div class="phase-timeline">
+                    <div class="rollout-phase">
+                        <h4>Phase 1: Internal Pilot (Weeks 1-2)</h4>
+                        <p><strong>Audience:</strong> HR team only (Diana, Paige, team)</p>
+                        <p><strong>Size:</strong> 10-15 users</p>
+                        <p><strong>Goal:</strong> Validate content accuracy, catch bugs, refine before wider release</p>
+                        <p><strong>Success Criteria:</strong></p>
+                        <ul>
+                            <li>No critical bugs</li>
+                            <li>HR confirms information accuracy</li>
+                            <li>Escalation path works smoothly</li>
+                        </ul>
+                    </div>
+
+                    <div class="rollout-phase">
+                        <h4>Phase 2: Friendly User Beta (Weeks 3-6)</h4>
+                        <p><strong>Audience:</strong> Volunteer early adopters (one department or location)</p>
+                        <p><strong>Size:</strong> 50-100 users</p>
+                        <p><strong>Goal:</strong> Test at scale, gather usage data, refine based on patterns</p>
+                        <p><strong>Success Criteria:</strong></p>
+                        <ul>
+                            <li>≥ 60% of beta users active weekly</li>
+                            <li>≥ 4.0/5.0 satisfaction</li>
+                            <li>Resolution rate ≥ 70% (vs. escalation)</li>
+                        </ul>
+                    </div>
+
+                    <div class="rollout-phase">
+                        <h4>Phase 3: Departmental Rollout (Weeks 7-12)</h4>
+                        <p><strong>Audience:</strong> One or more full departments</p>
+                        <p><strong>Size:</strong> 200-500 users</p>
+                        <p><strong>Goal:</strong> Validate across diverse roles, stress test systems</p>
+                        <p><strong>Success Criteria:</strong></p>
+                        <ul>
+                            <li>System performance stable</li>
+                            <li>Support ticket volume reduced by 20%</li>
+                            <li>No increase in incorrect information incidents</li>
+                        </ul>
+                    </div>
+
+                    <div class="rollout-phase">
+                        <h4>Phase 4: Company-Wide Launch (Week 13+)</h4>
+                        <p><strong>Audience:</strong> All employees</p>
+                        <p><strong>Size:</strong> Full organization</p>
+                        <p><strong>Goal:</strong> Full adoption, ongoing optimization</p>
+                        <p><strong>Success Criteria:</strong></p>
+                        <ul>
+                            <li>≥ 50% employees use within first month</li>
+                            <li>Sustained satisfaction ≥ 4.0/5.0</li>
+                            <li>ROI targets met (time saved, ticket reduction)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Training & Change Management</h2>
+
+            <div class="training-plan">
+                <h3>Multi-Layered Training Approach</h3>
+
+                <div class="training-grid">
+                    <div class="training-card">
+                        <h4>For Employees</h4>
+                        <p><strong>Format:</strong> Self-service onboarding</p>
+                        <ul>
+                            <li>2-minute intro video</li>
+                            <li>Interactive tutorial (first-time user experience)</li>
+                            <li>FAQ and help documentation</li>
+                            <li>Example questions to try</li>
+                        </ul>
+                        <p><strong>Messaging:</strong> "Get HR answers in seconds, 24/7"</p>
+                    </div>
+
+                    <div class="training-card">
+                        <h4>For Managers</h4>
+                        <p><strong>Format:</strong> Live session + job aids</p>
+                        <ul>
+                            <li>30-minute manager training session</li>
+                            <li>Manager-specific use cases</li>
+                            <li>How to help team members use the system</li>
+                            <li>Quick reference guide</li>
+                        </ul>
+                        <p><strong>Messaging:</strong> "Empower your team with instant HR support"</p>
+                    </div>
+
+                    <div class="training-card">
+                        <h4>For HR Team</h4>
+                        <p><strong>Format:</strong> In-depth workshop</p>
+                        <ul>
+                            <li>2-hour training on system administration</li>
+                            <li>Content management and updates</li>
+                            <li>Handling escalations</li>
+                            <li>Analytics and reporting</li>
+                            <li>Troubleshooting common issues</li>
+                        </ul>
+                        <p><strong>Messaging:</strong> "Focus on strategic work, let AI handle the repetitive"</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Change Management Tactics</h3>
+            <ul>
+                <li><strong>Executive Sponsorship:</strong> Eduardo sends launch announcement emphasizing importance</li>
+                <li><strong>HR Champions:</strong> Diana, Paige promote adoption in their networks</li>
+                <li><strong>Success Stories:</strong> Share how beta users saved time or solved problems</li>
+                <li><strong>Incentives:</strong> Consider gamification or recognition for early adopters</li>
+                <li><strong>Multi-Channel Communication:</strong> Email, Slack/Teams, intranet, town halls</li>
+                <li><strong>Address Concerns:</strong> Proactively communicate about AI accuracy, privacy, job security</li>
+            </ul>
+        </section>
+
+        <section class="phase-content">
+            <h2>Performance Monitoring</h2>
+
+            <h3>Key Metrics Dashboard</h3>
+
+            <div class="metrics-categories">
+                <div class="metric-category">
+                    <h4>Adoption Metrics</h4>
+                    <ul>
+                        <li>Number of active users (daily/weekly/monthly)</li>
+                        <li>Adoption rate by department/role</li>
+                        <li>Frequency of use per user</li>
+                        <li>New vs. returning users</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Engagement Metrics</h4>
+                    <ul>
+                        <li>Questions asked per session</li>
+                        <li>Average session duration</li>
+                        <li>Most common questions/topics</li>
+                        <li>Peak usage times</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Performance Metrics</h4>
+                    <ul>
+                        <li>Resolution rate (bot vs. escalation)</li>
+                        <li>Average response time</li>
+                        <li>Accuracy rate (validated responses)</li>
+                        <li>Error rate / system downtime</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Satisfaction Metrics</h4>
+                    <ul>
+                        <li>User satisfaction score (post-interaction)</li>
+                        <li>Net Promoter Score (NPS)</li>
+                        <li>Thumbs up/down on responses</li>
+                        <li>Qualitative feedback themes</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Business Impact Metrics</h4>
+                    <ul>
+                        <li>HR support ticket volume (reduction)</li>
+                        <li>Average time to resolution</li>
+                        <li>Estimated time saved (employee + HR)</li>
+                        <li>Cost per interaction vs. human support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><strong>Review Cadence:</strong></p>
+            <ul>
+                <li>Daily during first week (catch critical issues fast)</li>
+                <li>Weekly during pilot and beta phases</li>
+                <li>Monthly after full rollout</li>
+                <li>Quarterly business reviews with executive sponsors</li>
+            </ul>
+        </section>
+
+        <section class="phase-content">
+            <h2>Continuous Improvement</h2>
+
+            <h3>Feedback Loops</h3>
+
+            <div class="feedback-mechanisms">
+                <div class="feedback-method">
+                    <h4>In-App Feedback</h4>
+                    <ul>
+                        <li>Rate every response (helpful / not helpful)</li>
+                        <li>"Report an issue" button</li>
+                        <li>Suggest improvement option</li>
+                    </ul>
+                </div>
+
+                <div class="feedback-method">
+                    <h4>Periodic Surveys</h4>
+                    <ul>
+                        <li>Monthly pulse survey (2-3 questions)</li>
+                        <li>Quarterly deep dive (10-15 questions)</li>
+                        <li>Exit survey for users who stop using</li>
+                    </ul>
+                </div>
+
+                <div class="feedback-method">
+                    <h4>User Interviews</h4>
+                    <ul>
+                        <li>Monthly interviews with 3-5 active users</li>
+                        <li>Understand evolving needs</li>
+                        <li>Identify feature gaps</li>
+                    </ul>
+                </div>
+
+                <div class="feedback-method">
+                    <h4>Analytics Review</h4>
+                    <ul>
+                        <li>Failed queries (questions bot couldn't answer)</li>
+                        <li>High abandonment points</li>
+                        <li>Trending topics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Iteration Roadmap</h3>
+            <p>Plan for continuous releases, not just "set and forget"</p>
+
+            <div class="iteration-roadmap">
+                <div class="roadmap-item">
+                    <strong>Month 1-2:</strong> Bug fixes, content refinements, usability tweaks
+                </div>
+                <div class="roadmap-item">
+                    <strong>Month 3-4:</strong> Add 2nd persona features (if started with one)
+                </div>
+                <div class="roadmap-item">
+                    <strong>Month 5-6:</strong> Expand content coverage, improve AI accuracy
+                </div>
+                <div class="roadmap-item">
+                    <strong>Month 7-9:</strong> Add "Should Have" features from MoSCoW list
+                </div>
+                <div class="roadmap-item">
+                    <strong>Month 10-12:</strong> Advanced features, integrations, multilingual support
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Governance & Maintenance</h2>
+
+            <h3>Content Governance</h3>
+            <ul>
+                <li><strong>Owner:</strong> HR team (Jeanette as SME lead)</li>
+                <li><strong>Review Cycle:</strong> Quarterly content audit</li>
+                <li><strong>Update Process:</strong> HR can update FAQs/policies directly (no dev needed)</li>
+                <li><strong>Approval Workflow:</strong> Sensitive policy changes require Diana/Paige approval</li>
+                <li><strong>Version Control:</strong> Track what changed, when, and why</li>
+            </ul>
+
+            <h3>Technical Maintenance</h3>
+            <ul>
+                <li><strong>Owner:</strong> Jesus, Javier, Yuri team</li>
+                <li><strong>SLA:</strong> 99% uptime; critical bugs fixed within 24 hours</li>
+                <li><strong>Updates:</strong> Monthly releases for improvements, weekly for bug fixes</li>
+                <li><strong>Monitoring:</strong> 24/7 system health monitoring</li>
+                <li><strong>Backup:</strong> Daily data backups, disaster recovery plan</li>
+            </ul>
+
+            <h3>Steering Committee</h3>
+            <p>Monthly meeting to review performance and set direction</p>
+            <ul>
+                <li><strong>Members:</strong> Lydia (lead), Diana/Paige (HR), Yuri (tech), Eduardo (sponsor)</li>
+                <li><strong>Agenda:</strong> Metrics review, user feedback themes, roadmap prioritization, issue escalation</li>
+                <li><strong>Decisions:</strong> Feature priorities, scope changes, resource allocation</li>
+            </ul>
+        </section>
+
+        <section class="phase-content">
+            <h2>Risk Mitigation</h2>
+
+            <div class="risk-mitigation">
+                <h3>Launch Risks & Contingencies</h3>
+
+                <table class="risk-table">
+                    <thead>
+                        <tr>
+                            <th>Risk</th>
+                            <th>Mitigation</th>
+                            <th>Contingency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Low adoption</td>
+                            <td>Strong change management; executive support; clear value proposition</td>
+                            <td>Extend pilot; add incentives; run adoption campaign</td>
+                        </tr>
+                        <tr>
+                            <td>Inaccurate responses</td>
+                            <td>Thorough testing; HR content review; confidence thresholds</td>
+                            <td>Easy escalation; human review layer; temporarily reduce scope</td>
+                        </tr>
+                        <tr>
+                            <td>Technical failures</td>
+                            <td>Robust testing; phased rollout; monitoring</td>
+                            <td>Rollback plan; status page; alternative support channels</td>
+                        </tr>
+                        <tr>
+                            <td>Privacy concerns</td>
+                            <td>Clear data policies; role-based access; user consent</td>
+                            <td>Adjust permissions; increase transparency; involve legal</td>
+                        </tr>
+                        <tr>
+                            <td>HR team resistance</td>
+                            <td>Involve HR early; show time savings; position as tool not replacement</td>
+                            <td>Extend training; add HR-requested features; celebrate wins</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Success Criteria</h2>
+
+            <div class="success-checklist">
+                <h3>Launch is successful when:</h3>
+                <ul class="checklist">
+                    <li>✓ Pilot phase completed with no critical blockers</li>
+                    <li>✓ Beta phase shows ≥ 4.0/5.0 satisfaction</li>
+                    <li>✓ Training materials delivered to all user groups</li>
+                    <li>✓ Monitoring dashboard operational</li>
+                    <li>✓ Support escalation process working smoothly</li>
+                    <li>✓ HR team comfortable managing content</li>
+                </ul>
+
+                <h3>Long-term success indicators (6 months):</h3>
+                <ul class="checklist">
+                    <li>✓ ≥ 50% of employees are active users</li>
+                    <li>✓ Sustained satisfaction ≥ 4.0/5.0</li>
+                    <li>✓ HR support ticket volume reduced by 30%+</li>
+                    <li>✓ 70%+ resolution rate (bot vs. escalation)</li>
+                    <li>✓ Measurable time savings for employees and HR</li>
+                    <li>✓ Positive ROI demonstrated</li>
+                    <li>✓ Continuous improvement roadmap in place</li>
+                    <li>✓ Stakeholder satisfaction (Eduardo, Diana, Paige all happy)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <div class="alert info">
+                <h3>The Journey Continues</h3>
+                <p>Implementation isn't the end - it's the beginning of a continuous cycle of learning and improvement. The user-centered approach doesn't stop at launch. Keep listening to users, measuring impact, and iterating based on real-world needs.</p>
+            </div>
+        </section>
+
+        <div class="phase-navigation">
+            <a href="phase4-prototype.html" class="btn-nav">← Previous: Prototype</a>
+            <a href="index.html" class="btn-nav-next">Back to Home →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Context - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html" class="active">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Project Context & Background</h1>
+
+        <section class="context-section">
+            <h2>Project Vision</h2>
+            <p>Develop an AI-powered HR assistant that provides contextual, role-appropriate support to employees, managers, and HR administrators through avatar interaction and intelligent data integration.</p>
+        </section>
+
+        <section class="context-section">
+            <h2>Current State Assessment</h2>
+
+            <div class="status-grid">
+                <div class="status-card progress">
+                    <h3>What We Have</h3>
+                    <ul>
+                        <li>Existing "We Guide You" bot (Jeanette's work) answering basic HR questions from SharePoint</li>
+                        <li>Workday integration pulling employee relationships and company-wide documentation</li>
+                        <li>Avatar interaction and lip-sync technology (in development)</li>
+                        <li>Technical expertise (Jesus, Javier, Yuri team)</li>
+                        <li>Executive sponsorship from Eduardo</li>
+                    </ul>
+                </div>
+
+                <div class="status-card warning">
+                    <h3>What We're Missing</h3>
+                    <ul>
+                        <li>Clear, documented user requirements</li>
+                        <li>Defined user personas and use cases</li>
+                        <li>Identified pain points and user journeys</li>
+                        <li>Scope boundaries and prioritized features</li>
+                        <li>Full HR leadership alignment and awareness</li>
+                        <li>User-specific contextual data filtering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="context-section">
+            <h2>Critical Challenges</h2>
+
+            <div class="challenge-list">
+                <div class="challenge-item high">
+                    <span class="priority-badge">HIGH PRIORITY</span>
+                    <h3>Unclear & Shifting Requirements</h3>
+                    <p><strong>Issue:</strong> Requirements are not clearly documented, leading to misaligned expectations and scope creep.</p>
+                    <p><strong>Impact:</strong> Risk of building wrong features, wasted development effort, stakeholder dissatisfaction.</p>
+                    <p><strong>Mitigation:</strong> Implement structured requirements gathering through design thinking process; document everything; establish change control process.</p>
+                </div>
+
+                <div class="challenge-item high">
+                    <span class="priority-badge">HIGH PRIORITY</span>
+                    <h3>Stakeholder Misalignment</h3>
+                    <p><strong>Issue:</strong> HR leadership not fully aware of project progress; varying expectations between Eduardo, HR, and development team.</p>
+                    <p><strong>Impact:</strong> Miscommunication, conflicting priorities, resistance to adoption.</p>
+                    <p><strong>Mitigation:</strong> Schedule requirements clarification meeting with HR leadership (Diana, Paige); engage Jeanette upon return; establish regular communication cadence.</p>
+                </div>
+
+                <div class="challenge-item high">
+                    <span class="priority-badge">HIGH PRIORITY</span>
+                    <h3>Scope Management & System Integration</h3>
+                    <p><strong>Issue:</strong> Pressure to integrate too many systems and deliver broad functionality exceeds team capacity.</p>
+                    <p><strong>Impact:</strong> Resource drain, incomplete product, technical debt, missed deadlines.</p>
+                    <p><strong>Mitigation:</strong> Limit scope to essential components; prioritize based on user value; communicate trade-offs clearly to Eduardo.</p>
+                </div>
+
+                <div class="challenge-item medium">
+                    <span class="priority-badge">MEDIUM PRIORITY</span>
+                    <h3>Diverse User Needs</h3>
+                    <p><strong>Issue:</strong> Different user groups (employees, managers, HR admins) have varying needs, permissions, and use cases.</p>
+                    <p><strong>Impact:</strong> Complex requirements, role-based access challenges, varied success metrics.</p>
+                    <p><strong>Mitigation:</strong> Define clear personas for each user type; develop role-specific features and permissions; test with representatives from each group.</p>
+                </div>
+
+                <div class="challenge-item medium">
+                    <span class="priority-badge">MEDIUM PRIORITY</span>
+                    <h3>Data Context & Filtering</h3>
+                    <p><strong>Issue:</strong> Currently pulling company-wide data, but users need personalized, role-appropriate information.</p>
+                    <p><strong>Impact:</strong> Information overload, privacy concerns, irrelevant responses.</p>
+                    <p><strong>Mitigation:</strong> Jesus developing contextual tool for user-specific data retrieval; define guardrails for sensitive information; implement role-based filtering.</p>
+                </div>
+
+                <div class="challenge-item low">
+                    <span class="priority-badge">TECHNICAL</span>
+                    <h3>Technical Quality Issues</h3>
+                    <p><strong>Issue:</strong> Audio quality problems affecting avatar lip-sync; browser limitations for Teams audio sharing.</p>
+                    <p><strong>Impact:</strong> Poor demo experience, reduced user confidence in technology.</p>
+                    <p><strong>Mitigation:</strong> Obtain clean 30-second voice recording; record and send files separately for demos; continue debugging lip-sync system.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="context-section">
+            <h2>Technical Architecture Overview</h2>
+
+            <div class="architecture-box">
+                <h3>Current Integration Points</h3>
+                <ul>
+                    <li><strong>Workday:</strong> Employee data, relationships, company-wide documentation</li>
+                    <li><strong>SharePoint:</strong> HR policies and basic Q&A content (via We Guide You bot)</li>
+                    <li><strong>Avatar System:</strong> Voice interaction and visual representation</li>
+                    <li><strong>Contextual Tool (in development):</strong> User-specific data filtering and permissions</li>
+                </ul>
+
+                <h3>Open Questions</h3>
+                <ul>
+                    <li>Which questions should be answered by documents vs. real-time Workday API queries?</li>
+                    <li>What policies and information should be accessible to different user roles?</li>
+                    <li>How do we handle restricted or sensitive HR information?</li>
+                    <li>What approval workflows are needed for policy exposure?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="context-section">
+            <h2>Success Criteria</h2>
+
+            <div class="success-metrics">
+                <div class="metric-category">
+                    <h3>User Adoption</h3>
+                    <ul>
+                        <li>High user satisfaction scores</li>
+                        <li>Regular active usage across all user groups</li>
+                        <li>Reduced HR support ticket volume</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h3>Business Value</h3>
+                    <ul>
+                        <li>Time saved for employees and HR staff</li>
+                        <li>Faster resolution of HR inquiries</li>
+                        <li>Improved employee experience</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h3>Technical Performance</h3>
+                    <ul>
+                        <li>Accurate, contextual responses</li>
+                        <li>Fast response times</li>
+                        <li>Reliable system uptime</li>
+                        <li>Secure data handling</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Delivery within defined scope</li>
+                        <li>Clear, documented requirements</li>
+                        <li>Stakeholder alignment maintained</li>
+                        <li>Manageable technical debt</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="context-section">
+            <h2>Key Risks & Mitigation Strategies</h2>
+
+            <table class="risk-table">
+                <thead>
+                    <tr>
+                        <th>Risk</th>
+                        <th>Probability</th>
+                        <th>Impact</th>
+                        <th>Mitigation Strategy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Requirements continue to shift without documentation</td>
+                        <td>High</td>
+                        <td>High</td>
+                        <td>Implement formal change control; require written approval for scope changes; use this website as single source of truth</td>
+                    </tr>
+                    <tr>
+                        <td>Eduardo demands unrealistic scope/timeline</td>
+                        <td>High</td>
+                        <td>High</td>
+                        <td>Lydia to communicate complexity and constraints; present trade-offs clearly; demonstrate user research backing for priorities</td>
+                    </tr>
+                    <tr>
+                        <td>HR stakeholders not engaged early enough</td>
+                        <td>Medium</td>
+                        <td>High</td>
+                        <td>Tuesday 9AM meeting with Diana, Paige, team; involve Jeanette upon return; establish regular touchpoints</td>
+                    </tr>
+                    <tr>
+                        <td>Building features users don't actually need</td>
+                        <td>Medium</td>
+                        <td>High</td>
+                        <td>Conduct thorough user research; validate assumptions through interviews; test prototypes with real users</td>
+                    </tr>
+                    <tr>
+                        <td>Technical integration complexity exceeds capacity</td>
+                        <td>Medium</td>
+                        <td>Medium</td>
+                        <td>Limit integrations to essentials; leverage existing We Guide You bot; phase implementation</td>
+                    </tr>
+                    <tr>
+                        <td>Different user groups have conflicting needs</td>
+                        <td>Low</td>
+                        <td>Medium</td>
+                        <td>Define clear personas; prioritize based on business value; implement role-specific features</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="context-section">
+            <h2>Why User-Centered Design Matters Here</h2>
+
+            <div class="alert info">
+                <h3>The Risk of System-Driven Development</h3>
+                <p>As Yuri emphasized from 30 years of experience: <em>"Without user-driven design, the system risks failing due to unclear or conflicting requirements."</em></p>
+            </div>
+
+            <p>Given our current challenges, a user-centered approach is critical because:</p>
+
+            <ol class="benefits-list">
+                <li><strong>Aligns Diverse Stakeholders:</strong> IT and HR have different perspectives. User research provides objective data to align everyone around actual user needs.</li>
+
+                <li><strong>Prevents Scope Creep:</strong> Clear user personas and prioritized pain points give us a framework to say "yes" or "no" to feature requests based on user value.</li>
+
+                <li><strong>Manages Executive Expectations:</strong> When Eduardo pushes for broad functionality, we can point to user research showing what users actually need and will use.</li>
+
+                <li><strong>Reduces Rework:</strong> Building the right thing the first time is faster than building the wrong thing and having to redo it.</li>
+
+                <li><strong>Increases Adoption:</strong> Users are more likely to adopt a system that was designed with their input and solves their real problems.</li>
+
+                <li><strong>Provides Clear Success Metrics:</strong> User needs become our definition of success, making it easier to measure and demonstrate value.</li>
+            </ol>
+        </section>
+
+        <section class="context-section">
+            <h2>Next Steps</h2>
+
+            <div class="next-steps-grid">
+                <div class="step-card urgent">
+                    <span class="deadline">By Monday</span>
+                    <h3>Complete Requirements Documentation</h3>
+                    <p>Finalize this website with templates and frameworks for user research</p>
+                </div>
+
+                <div class="step-card urgent">
+                    <span class="deadline">Tuesday 9:00 AM</span>
+                    <h3>HR Leadership Alignment Meeting</h3>
+                    <p>Present user-centered approach; gather initial input from Diana, Paige, team</p>
+                </div>
+
+                <div class="step-card urgent">
+                    <span class="deadline">Tuesday</span>
+                    <h3>Demo Delivery</h3>
+                    <p>Show current capabilities as proof of concept (not final prototype)</p>
+                </div>
+
+                <div class="step-card">
+                    <span class="deadline">This Week</span>
+                    <h3>Begin Empathy Phase</h3>
+                    <p>Schedule user interviews; conduct observations; map user journeys</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

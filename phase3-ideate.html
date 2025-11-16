@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 3: Ideate - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html" class="active">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="phase-header ideate-phase">
+            <div class="phase-number-large">3</div>
+            <div class="phase-title">
+                <h1>Ideate Phase</h1>
+                <p>Generating Creative Solutions to Defined Problems</p>
+            </div>
+        </div>
+
+        <section class="phase-content">
+            <h2>Phase Overview</h2>
+            <p>The Ideate phase is where we generate a wide range of creative solutions to the problems we defined. We explore possibilities without judgment, then converge on the most promising ideas to prototype.</p>
+
+            <div class="phase-objectives">
+                <h3>Key Objectives</h3>
+                <ul>
+                    <li>Generate diverse solution ideas without constraints</li>
+                    <li>Build on existing solutions (We Guide You bot, Workday integration)</li>
+                    <li>Evaluate ideas against user needs and technical feasibility</li>
+                    <li>Select most promising concepts for prototyping</li>
+                    <li>Design user experiences that solve prioritized problems</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Ideation Methods</h2>
+
+            <div class="method-grid">
+                <div class="method-card">
+                    <h3>1. Brainstorming Workshop</h3>
+                    <p>Generate quantity over quality - defer judgment</p>
+
+                    <h4>Rules of Brainstorming</h4>
+                    <ol>
+                        <li>Defer judgment - no idea is bad</li>
+                        <li>Encourage wild ideas</li>
+                        <li>Build on others' ideas</li>
+                        <li>Stay focused on the problem</li>
+                        <li>One conversation at a time</li>
+                        <li>Be visual - sketch it out</li>
+                    </ol>
+
+                    <h4>Prompt Examples</h4>
+                    <ul>
+                        <li>"How might we help employees find HR information in under 2 minutes?"</li>
+                        <li>"How might we give managers confidence in handling HR situations?"</li>
+                        <li>"How might we reduce repetitive questions to HR?"</li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <h3>2. SCAMPER Technique</h3>
+                    <p>Improve existing solutions systematically</p>
+
+                    <h4>SCAMPER Framework</h4>
+                    <ul>
+                        <li><strong>Substitute:</strong> What if we replaced SharePoint with a conversational interface?</li>
+                        <li><strong>Combine:</strong> What if we merged We Guide You bot with Workday data?</li>
+                        <li><strong>Adapt:</strong> How can we adapt consumer chatbot patterns to HR?</li>
+                        <li><strong>Modify:</strong> What if responses were personalized to the user's role?</li>
+                        <li><strong>Put to other use:</strong> Could the avatar also handle onboarding?</li>
+                        <li><strong>Eliminate:</strong> What if we removed the need to search multiple systems?</li>
+                        <li><strong>Reverse:</strong> What if HR proactively pushed info instead of waiting for questions?</li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <h3>3. User Scenario Storyboarding</h3>
+                    <p>Visualize how users would experience solutions</p>
+
+                    <h4>Storyboard Elements</h4>
+                    <ol>
+                        <li><strong>Context:</strong> Where is the user? What's their situation?</li>
+                        <li><strong>Trigger:</strong> What prompts them to use the system?</li>
+                        <li><strong>Interaction:</strong> How do they engage with the solution?</li>
+                        <li><strong>Response:</strong> What does the system do?</li>
+                        <li><strong>Outcome:</strong> How does the user feel? Problem solved?</li>
+                    </ol>
+
+                    <p>Create 6-8 panel sketches showing the user journey</p>
+                </div>
+
+                <div class="method-card">
+                    <h3>4. Analogous Inspiration</h3>
+                    <p>Learn from solutions in other domains</p>
+
+                    <h4>Look to These Domains</h4>
+                    <ul>
+                        <li><strong>Consumer AI:</strong> Alexa, Google Assistant - natural language, context awareness</li>
+                        <li><strong>Customer Service:</strong> Zendesk, Intercom - escalation patterns, knowledge bases</li>
+                        <li><strong>Healthcare:</strong> Patient portals - privacy, personalized information</li>
+                        <li><strong>Banking:</strong> Mobile banking apps - secure access, transaction history</li>
+                    </ul>
+
+                    <p><strong>Question:</strong> "How would [Amazon/Apple/Mayo Clinic] solve this problem?"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Solution Concepts to Explore</h2>
+
+            <div class="concept-grid">
+                <div class="concept-card">
+                    <h3>Core Interaction Models</h3>
+                    <ul>
+                        <li>Text-based chat interface</li>
+                        <li>Voice-activated avatar (current direction)</li>
+                        <li>Hybrid: text + avatar option</li>
+                        <li>Proactive notifications/suggestions</li>
+                        <li>Guided wizards for complex tasks</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Content & Intelligence</h3>
+                    <ul>
+                        <li>FAQ-based responses (like We Guide You)</li>
+                        <li>Real-time Workday data queries</li>
+                        <li>Contextual recommendations</li>
+                        <li>Predictive assistance ("you might need...")</li>
+                        <li>Learning from user interactions</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Personalization</h3>
+                    <ul>
+                        <li>Role-based permissions and content</li>
+                        <li>Location-specific policies</li>
+                        <li>Career stage relevant information</li>
+                        <li>Preferred communication style</li>
+                        <li>Past interaction history</li>
+                    </ul>
+                </div>
+
+                <div class="concept-card">
+                    <h3>Escalation & Handoff</h3>
+                    <ul>
+                        <li>Seamless bot-to-human transition</li>
+                        <li>Context preservation during handoff</li>
+                        <li>Queue for HR response</li>
+                        <li>Callback scheduling</li>
+                        <li>Ticket creation in existing systems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Evaluation & Selection</h2>
+
+            <h3>Idea Evaluation Criteria</h3>
+            <div class="evaluation-framework">
+                <div class="criteria-group">
+                    <h4>User Value (40%)</h4>
+                    <ul>
+                        <li>Directly solves prioritized user problem?</li>
+                        <li>Number of users impacted?</li>
+                        <li>Severity of pain point addressed?</li>
+                        <li>Frequency of use?</li>
+                    </ul>
+                </div>
+
+                <div class="criteria-group">
+                    <h4>Technical Feasibility (30%)</h4>
+                    <ul>
+                        <li>Can we build it with current resources?</li>
+                        <li>Leverages existing systems (Workday, We Guide You)?</li>
+                        <li>Technical risks manageable?</li>
+                        <li>Time to implement realistic?</li>
+                    </ul>
+                </div>
+
+                <div class="criteria-group">
+                    <h4>Business Viability (20%)</h4>
+                    <ul>
+                        <li>Fits within scope constraints?</li>
+                        <li>ROI justifiable?</li>
+                        <li>Stakeholder support?</li>
+                        <li>Compliance and security requirements met?</li>
+                    </ul>
+                </div>
+
+                <div class="criteria-group">
+                    <h4>Usability (10%)</h4>
+                    <ul>
+                        <li>Easy to learn?</li>
+                        <li>Accessible to all users?</li>
+                        <li>Fits user workflows?</li>
+                        <li>Low adoption friction?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Dot Voting Workshop</h3>
+            <p>Engage stakeholders in selecting ideas:</p>
+            <ol>
+                <li>Display all ideas visually</li>
+                <li>Give each participant 5 votes (dots)</li>
+                <li>Vote on ideas that best meet criteria</li>
+                <li>Discuss top vote-getters</li>
+                <li>Select 2-3 concepts to prototype</li>
+            </ol>
+        </section>
+
+        <section class="phase-content">
+            <h2>Design Principles</h2>
+            <p>These principles should guide all solution concepts:</p>
+
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3>1. Contextually Intelligent</h3>
+                    <p>Responses tailored to user's role, location, and situation - not generic answers</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>2. Privacy Respecting</h3>
+                    <p>Clear about what information is accessible to whom; explicit consent for sensitive data</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>3. Accuracy Over Speed</h3>
+                    <p>Better to say "let me connect you to HR" than give wrong information</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>4. Gracefully Degrading</h3>
+                    <p>When AI can't help, seamlessly escalate to human with full context</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>5. Continuously Improving</h3>
+                    <p>Learn from interactions to improve responses; HR can update content easily</p>
+                </div>
+
+                <div class="principle-item">
+                    <h3>6. Accessible to All</h3>
+                    <p>Works for users with varying technical skill, disabilities, languages</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Deliverables</h2>
+
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Concept Sketches</h3>
+                    <ul>
+                        <li>10-15 diverse solution ideas</li>
+                        <li>Visual storyboards of key concepts</li>
+                        <li>User scenario narratives</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Evaluated Concepts</h3>
+                    <ul>
+                        <li>Scoring against evaluation criteria</li>
+                        <li>Stakeholder voting results</li>
+                        <li>Rationale for selections</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Selected Solutions</h3>
+                    <ul>
+                        <li>2-3 concepts to prototype</li>
+                        <li>Detailed concept descriptions</li>
+                        <li>User flows and wireframes</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Design Principles</h3>
+                    <ul>
+                        <li>5-7 guiding principles</li>
+                        <li>Examples of application</li>
+                        <li>Design system foundations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Success Criteria</h2>
+
+            <div class="success-checklist">
+                <h3>This phase is complete when:</h3>
+                <ul class="checklist">
+                    <li>✓ We've generated 15+ diverse solution ideas</li>
+                    <li>✓ Ideas are evaluated against objective criteria</li>
+                    <li>✓ Stakeholders participated in idea selection</li>
+                    <li>✓ 2-3 concepts selected for prototyping</li>
+                    <li>✓ Selected concepts directly address top user problems from Define phase</li>
+                    <li>✓ Development team confirms technical feasibility</li>
+                    <li>✓ Design principles documented and agreed upon</li>
+                    <li>✓ User flows mapped for selected concepts</li>
+                    <li>✓ We can answer: "Why these solutions over others?"</li>
+                    <li>✓ HR leadership excited about the direction</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="phase-navigation">
+            <a href="phase2-define.html" class="btn-nav">← Previous: Define</a>
+            <a href="phase4-prototype.html" class="btn-nav-next">Next: Prototype Phase →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

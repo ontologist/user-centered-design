@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1: Empathize - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html" class="active">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="phase-header empathize-phase">
+            <div class="phase-number-large">1</div>
+            <div class="phase-title">
+                <h1>Empathize Phase</h1>
+                <p>Understanding Users Through Research and Observation</p>
+            </div>
+        </div>
+
+        <section class="phase-content">
+            <h2>Phase Overview</h2>
+            <p>The Empathize phase is about understanding the users' needs, challenges, and context. We set aside our assumptions and gather genuine insights through observation, engagement, and immersion in the users' world.</p>
+
+            <div class="phase-objectives">
+                <h3>Key Objectives</h3>
+                <ul>
+                    <li>Understand user pain points, needs, and motivations</li>
+                    <li>Validate or refine our initial personas</li>
+                    <li>Map current user journeys for HR tasks</li>
+                    <li>Identify opportunities and gaps in current solutions</li>
+                    <li>Build empathy with users across all three personas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Research Methods</h2>
+
+            <div class="method-grid">
+                <div class="method-card">
+                    <h3>1. User Interviews</h3>
+                    <p><strong>Purpose:</strong> Deep dive into individual experiences, needs, and pain points</p>
+
+                    <h4>Target Participants</h4>
+                    <ul>
+                        <li>6-8 General Employees (various departments, roles, tenure)</li>
+                        <li>5-7 Managers (different team sizes, first-time to experienced)</li>
+                        <li>4-6 HR Team Members (including Diana, Paige, business partners)</li>
+                    </ul>
+
+                    <h4>Interview Structure (30-45 min)</h4>
+                    <ol>
+                        <li><strong>Introduction (5 min):</strong> Build rapport, explain purpose, ensure confidentiality</li>
+                        <li><strong>Current State (15 min):</strong> How do you currently handle HR questions/tasks?</li>
+                        <li><strong>Pain Points (10 min):</strong> What frustrates you? What takes too long?</li>
+                        <li><strong>Needs & Goals (10 min):</strong> What would make your life easier?</li>
+                        <li><strong>Wrap-up (5 min):</strong> Anything we didn't cover? Additional thoughts?</li>
+                    </ol>
+
+                    <a href="templates.html#interview-guide" class="btn">View Interview Guide Template →</a>
+                </div>
+
+                <div class="method-card">
+                    <h3>2. Contextual Observation</h3>
+                    <p><strong>Purpose:</strong> See actual behavior in real context, not just reported behavior</p>
+
+                    <h4>What to Observe</h4>
+                    <ul>
+                        <li>How users search for HR information</li>
+                        <li>Which systems they access and in what order</li>
+                        <li>Where they get stuck or frustrated</li>
+                        <li>Workarounds they've developed</li>
+                        <li>Who they ask for help</li>
+                    </ul>
+
+                    <h4>Observation Protocol</h4>
+                    <ol>
+                        <li>Ask user to perform a real task (not staged)</li>
+                        <li>Encourage "think aloud" - say what they're thinking</li>
+                        <li>Don't interrupt or offer help</li>
+                        <li>Take detailed notes on behavior and context</li>
+                        <li>Debrief afterward to understand their thinking</li>
+                    </ol>
+
+                    <a href="templates.html#observation-protocol" class="btn">View Observation Template →</a>
+                </div>
+
+                <div class="method-card">
+                    <h3>3. Journey Mapping Workshop</h3>
+                    <p><strong>Purpose:</strong> Visualize end-to-end experience and identify key moments</p>
+
+                    <h4>Workshop Approach</h4>
+                    <ul>
+                        <li>2-hour session with 6-8 representative users</li>
+                        <li>Map 2-3 common scenarios (e.g., "Finding vacation policy", "Requesting time off")</li>
+                        <li>Identify touchpoints, pain points, and emotions</li>
+                        <li>Highlight opportunities for improvement</li>
+                    </ul>
+
+                    <h4>Journey Map Elements</h4>
+                    <ol>
+                        <li><strong>Stages:</strong> Steps user takes from start to finish</li>
+                        <li><strong>Actions:</strong> What they do at each stage</li>
+                        <li><strong>Touchpoints:</strong> Systems, people, channels they interact with</li>
+                        <li><strong>Emotions:</strong> How they feel (frustration to delight)</li>
+                        <li><strong>Pain Points:</strong> Where things break down</li>
+                        <li><strong>Opportunities:</strong> Where we can add value</li>
+                    </ol>
+
+                    <a href="templates.html#journey-map" class="btn">View Journey Map Template →</a>
+                </div>
+
+                <div class="method-card">
+                    <h3>4. Stakeholder Interviews</h3>
+                    <p><strong>Purpose:</strong> Understand business context, constraints, and success criteria</p>
+
+                    <h4>Key Stakeholders to Interview</h4>
+                    <ul>
+                        <li>Diana & Paige (HR Leadership)</li>
+                        <li>Jeanette (SME, upon return)</li>
+                        <li>HR Business Partners</li>
+                        <li>Eduardo (Executive perspective)</li>
+                    </ul>
+
+                    <h4>Focus Areas</h4>
+                    <ul>
+                        <li>Strategic goals for HR services</li>
+                        <li>Current pain points from HR's perspective</li>
+                        <li>Constraints (budget, compliance, technology)</li>
+                        <li>Success metrics and KPIs</li>
+                        <li>Content and policy governance needs</li>
+                    </ul>
+
+                    <a href="templates.html#stakeholder-interview" class="btn">View Stakeholder Guide →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Key Research Questions</h2>
+
+            <div class="research-questions">
+                <div class="question-category">
+                    <h3>For Employees</h3>
+                    <ul>
+                        <li>What HR questions or tasks do you handle most frequently?</li>
+                        <li>Where do you currently go when you have an HR question?</li>
+                        <li>What's frustrating about finding HR information today?</li>
+                        <li>When do you prefer self-service vs. talking to a person?</li>
+                        <li>How would you describe your ideal HR support experience?</li>
+                        <li>What HR tasks take longer than they should? Why?</li>
+                        <li>Have you used chatbots or AI assistants before? What was that like?</li>
+                    </ul>
+                </div>
+
+                <div class="question-category">
+                    <h3>For Managers</h3>
+                    <ul>
+                        <li>What HR tasks do you perform for your team regularly?</li>
+                        <li>What HR questions do your team members bring to you?</li>
+                        <li>When do you escalate to HR vs. handle yourself?</li>
+                        <li>What information do you wish you had easier access to?</li>
+                        <li>How do you balance employee privacy with need-to-know?</li>
+                        <li>What manager-specific guidance would be most helpful?</li>
+                    </ul>
+                </div>
+
+                <div class="question-category">
+                    <h3>For HR Team</h3>
+                    <ul>
+                        <li>What are the most common questions you receive?</li>
+                        <li>Which questions could be self-service vs. need human touch?</li>
+                        <li>What information do employees struggle to find?</li>
+                        <li>What concerns do you have about AI providing HR information?</li>
+                        <li>How do you want to control what information is accessible?</li>
+                        <li>What would make your job easier?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Data Collection & Synthesis</h2>
+
+            <h3>During Research</h3>
+            <ul>
+                <li>Take detailed notes (direct quotes are gold)</li>
+                <li>Record sessions with permission for later review</li>
+                <li>Photograph journey maps and workshop outputs</li>
+                <li>Note non-verbal cues (frustration, confusion, delight)</li>
+                <li>Look for patterns across multiple participants</li>
+            </ul>
+
+            <h3>After Each Session</h3>
+            <ul>
+                <li>Write up full notes within 24 hours</li>
+                <li>Tag insights by persona and theme</li>
+                <li>Share anonymized quotes with team</li>
+                <li>Adjust interview guide if new themes emerge</li>
+            </ul>
+
+            <h3>Synthesis Workshop (After Research)</h3>
+            <p>Bring the team together to make sense of findings:</p>
+            <ol>
+                <li><strong>Affinity Mapping:</strong> Group similar insights into themes</li>
+                <li><strong>Pattern Recognition:</strong> What do we hear repeatedly?</li>
+                <li><strong>Persona Refinement:</strong> Update personas with real data</li>
+                <li><strong>Key Insights:</strong> Identify 5-7 critical findings</li>
+                <li><strong>Opportunity Areas:</strong> Where can we add the most value?</li>
+            </ol>
+        </section>
+
+        <section class="phase-content">
+            <h2>Deliverables from This Phase</h2>
+
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Research Summary Report</h3>
+                    <ul>
+                        <li>Number of participants and methods used</li>
+                        <li>Key findings organized by theme</li>
+                        <li>Supporting quotes and evidence</li>
+                        <li>Patterns across user groups</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Updated Personas</h3>
+                    <ul>
+                        <li>Validated with real user data</li>
+                        <li>Specific pain points and goals</li>
+                        <li>Actual quotes and behaviors</li>
+                        <li>Representative user stories</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>User Journey Maps</h3>
+                    <ul>
+                        <li>2-3 key scenarios mapped</li>
+                        <li>Current state with pain points</li>
+                        <li>Emotional highs and lows</li>
+                        <li>Opportunity areas identified</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Insight Themes</h3>
+                    <ul>
+                        <li>5-7 key insight categories</li>
+                        <li>Supporting evidence for each</li>
+                        <li>Implications for design</li>
+                        <li>Priority ranking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Success Criteria for This Phase</h2>
+
+            <div class="success-checklist">
+                <h3>We'll know this phase is complete when:</h3>
+                <ul class="checklist">
+                    <li>✓ We've interviewed at least 15 users across all three personas</li>
+                    <li>✓ We've observed users performing real HR tasks in context</li>
+                    <li>✓ We've mapped 2-3 key user journeys with representative users</li>
+                    <li>✓ We've conducted stakeholder interviews with HR leadership</li>
+                    <li>✓ We've synthesized findings into clear themes and patterns</li>
+                    <li>✓ We've updated personas with real data and quotes</li>
+                    <li>✓ We can answer: "What are the top 5 user pain points?"</li>
+                    <li>✓ We can answer: "What do users really need to be successful?"</li>
+                    <li>✓ HR leadership validates our findings as accurate</li>
+                    <li>✓ We have clear direction for the Define phase</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Timeline & Milestones</h2>
+
+            <div class="timeline-phase">
+                <div class="milestone">
+                    <strong>Week 1:</strong> Finalize research plan, recruit participants, schedule interviews
+                </div>
+                <div class="milestone">
+                    <strong>Weeks 2-3:</strong> Conduct user interviews and observations
+                </div>
+                <div class="milestone">
+                    <strong>Week 3:</strong> Run journey mapping workshop
+                </div>
+                <div class="milestone">
+                    <strong>Week 4:</strong> Synthesis workshop and deliverable creation
+                </div>
+                <div class="milestone">
+                    <strong>End of Week 4:</strong> Present findings to stakeholders
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <div class="alert info">
+                <h3>Why This Matters for Our Project</h3>
+                <p>Given our current challenges with unclear requirements and stakeholder misalignment, the Empathize phase is critical. It will:</p>
+                <ul>
+                    <li><strong>Provide objective data</strong> to align HR, IT, and executive perspectives</li>
+                    <li><strong>Prevent building the wrong thing</strong> by validating assumptions early</li>
+                    <li><strong>Give us ammunition</strong> to push back on scope creep with user evidence</li>
+                    <li><strong>Build stakeholder buy-in</strong> by involving them in the research</li>
+                    <li><strong>Focus our limited resources</strong> on what users actually need</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="phase-navigation">
+            <a href="index.html" class="btn-nav">← Back to Overview</a>
+            <a href="phase2-define.html" class="btn-nav-next">Next: Define Phase →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

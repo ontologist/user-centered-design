@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Best Practices - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Resources & Best Practices</h1>
+        <p>Industry frameworks, methodologies, and references for user-centered design and requirements gathering.</p>
+
+        <section class="resources-section">
+            <h2>Design Thinking Frameworks</h2>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Stanford d.school Design Thinking Process</h3>
+                    <p>The foundational 5-phase model we're using for this project.</p>
+                    <ul>
+                        <li>Empathize: Understand users deeply</li>
+                        <li>Define: Frame the right problem</li>
+                        <li>Ideate: Generate creative solutions</li>
+                        <li>Prototype: Build to think, test to learn</li>
+                        <li>Test: Refine based on feedback</li>
+                    </ul>
+                    <p><strong>Key Principle:</strong> Iterative, not linear. You can (and should) loop back to earlier phases.</p>
+                </div>
+
+                <div class="resource-card">
+                    <h3>IDEO Human-Centered Design</h3>
+                    <p>Expanded framework emphasizing inspiration, ideation, and implementation.</p>
+                    <p><strong>Core Mindsets:</strong></p>
+                    <ul>
+                        <li>Empathy over assumptions</li>
+                        <li>Creative confidence</li>
+                        <li>Making over thinking</li>
+                        <li>Iteration over perfection</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Double Diamond (UK Design Council)</h3>
+                    <p>Visualizes divergent (explore) and convergent (focus) thinking.</p>
+                    <ul>
+                        <li><strong>Discover:</strong> Explore the problem broadly</li>
+                        <li><strong>Define:</strong> Focus on the right problem</li>
+                        <li><strong>Develop:</strong> Explore many solutions</li>
+                        <li><strong>Deliver:</strong> Focus on the best solution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>User Research Methods</h2>
+
+            <div class="methods-list">
+                <div class="method-item">
+                    <h3>Qualitative Methods (Understanding WHY)</h3>
+                    <ul>
+                        <li><strong>User Interviews:</strong> 1-on-1 conversations to understand needs, behaviors, pain points</li>
+                        <li><strong>Contextual Inquiry:</strong> Observing users in their natural environment</li>
+                        <li><strong>Journey Mapping:</strong> Visualizing end-to-end user experience</li>
+                        <li><strong>Diary Studies:</strong> Users log experiences over time</li>
+                        <li><strong>Focus Groups:</strong> Group discussion (use sparingly - can create groupthink)</li>
+                    </ul>
+                    <p><strong>When to use:</strong> Early exploration, understanding context and motivations</p>
+                </div>
+
+                <div class="method-item">
+                    <h3>Quantitative Methods (Understanding WHAT and HOW MUCH)</h3>
+                    <ul>
+                        <li><strong>Surveys:</strong> Gather data from large sample to validate patterns</li>
+                        <li><strong>Analytics:</strong> Track actual usage behavior</li>
+                        <li><strong>A/B Testing:</strong> Compare two versions to see which performs better</li>
+                        <li><strong>Card Sorting:</strong> Understand how users categorize information</li>
+                        <li><strong>Tree Testing:</strong> Validate information architecture</li>
+                    </ul>
+                    <p><strong>When to use:</strong> Validating hypotheses, measuring at scale, prioritizing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Requirements Best Practices</h2>
+
+            <div class="best-practices">
+                <h3>Writing Effective User Stories</h3>
+                <p>Use the <strong>INVEST</strong> criteria:</p>
+                <ul>
+                    <li><strong>Independent:</strong> Can be developed separately</li>
+                    <li><strong>Negotiable:</strong> Details can be discussed</li>
+                    <li><strong>Valuable:</strong> Delivers user/business value</li>
+                    <li><strong>Estimable:</strong> Can estimate effort</li>
+                    <li><strong>Small:</strong> Fits in one sprint/iteration</li>
+                    <li><strong>Testable:</strong> Clear pass/fail criteria</li>
+                </ul>
+
+                <h3>Requirements Anti-Patterns to Avoid</h3>
+                <div class="alert warning">
+                    <ul>
+                        <li>❌ <strong>"As a user, I want a login button"</strong> → Focuses on solution, not need</li>
+                        <li>✅ <strong>"As a user, I want to securely access my personal information so that my data is protected"</strong></li>
+                    </ul>
+                    <ul>
+                        <li>❌ <strong>"System should be fast"</strong> → Not measurable</li>
+                        <li>✅ <strong>"Search results must load in under 2 seconds for 95% of queries"</strong></li>
+                    </ul>
+                    <ul>
+                        <li>❌ <strong>Requirements with no link to research</strong> → Based on assumptions</li>
+                        <li>✅ <strong>Every requirement references user insight or business need</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Usability Testing Guidelines</h2>
+
+            <div class="guidelines">
+                <h3>Jakob Nielsen's Usability Heuristics</h3>
+                <p>10 general principles for interaction design to evaluate against:</p>
+                <ol>
+                    <li><strong>Visibility of system status:</strong> Keep users informed</li>
+                    <li><strong>Match between system and real world:</strong> Speak users' language</li>
+                    <li><strong>User control and freedom:</strong> Easy undo/redo</li>
+                    <li><strong>Consistency and standards:</strong> Follow platform conventions</li>
+                    <li><strong>Error prevention:</strong> Better than good error messages</li>
+                    <li><strong>Recognition rather than recall:</strong> Minimize memory load</li>
+                    <li><strong>Flexibility and efficiency:</strong> Accommodate all skill levels</li>
+                    <li><strong>Aesthetic and minimalist design:</strong> No irrelevant info</li>
+                    <li><strong>Help users recognize, diagnose, recover from errors:</strong> Plain language error messages</li>
+                    <li><strong>Help and documentation:</strong> Easy to search, focused on tasks</li>
+                </ol>
+
+                <h3>How Many Users to Test?</h3>
+                <p><strong>Nielsen Norman Group research:</strong> Testing with 5 users uncovers 85% of usability problems.</p>
+                <ul>
+                    <li><strong>Early/low-fi:</strong> 3-5 users per round, multiple rounds</li>
+                    <li><strong>Mid/high-fi:</strong> 5-8 users per round</li>
+                    <li><strong>Quantitative validation:</strong> 20+ users</li>
+                </ul>
+                <p><strong>Key insight:</strong> More rounds with fewer users beats one round with many users</p>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>AI/Chatbot Specific Best Practices</h2>
+
+            <div class="ai-guidelines">
+                <h3>Conversational UI Design Principles</h3>
+                <ul>
+                    <li><strong>Be transparent:</strong> Users should know they're talking to AI, not human</li>
+                    <li><strong>Set expectations:</strong> Clear about what the bot can/can't do</li>
+                    <li><strong>Personality:</strong> Consistent tone (professional but friendly for HR context)</li>
+                    <li><strong>Error handling:</strong> Graceful degradation when bot doesn't understand</li>
+                    <li><strong>Escalation path:</strong> Always easy to reach a human</li>
+                    <li><strong>Context awareness:</strong> Remember conversation history</li>
+                    <li><strong>Privacy signals:</strong> Clear about data usage and access</li>
+                </ul>
+
+                <h3>Content Design for Chatbots</h3>
+                <ul>
+                    <li><strong>Short responses:</strong> 1-3 sentences ideal; chunk longer content</li>
+                    <li><strong>Scannable:</strong> Use bullets, numbers, formatting</li>
+                    <li><strong>Actionable:</strong> Clear next steps</li>
+                    <li><strong>Confidence indicators:</strong> "Based on your profile..." vs. "I think..."</li>
+                    <li><strong>Source citations:</strong> Link to full policy/documentation</li>
+                </ul>
+
+                <h3>Measuring Chatbot Performance</h3>
+                <ul>
+                    <li><strong>Containment rate:</strong> % of conversations resolved without escalation (target: 70-80%)</li>
+                    <li><strong>CSAT:</strong> Customer satisfaction score (target: ≥4.0/5.0)</li>
+                    <li><strong>Precision:</strong> % of responses that are accurate</li>
+                    <li><strong>Fallback rate:</strong> % of messages where bot says "I don't understand" (lower is better)</li>
+                    <li><strong>Engagement:</strong> Messages per conversation, return usage</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Stakeholder Management</h2>
+
+            <div class="stakeholder-tips">
+                <h3>Managing Competing Priorities</h3>
+                <p><strong>When Eduardo pushes for more scope than team can deliver:</strong></p>
+                <ul>
+                    <li>Ground discussion in user research: "Users told us X is their top need"</li>
+                    <li>Show trade-offs visually: "If we add Y, we must cut Z or delay 2 months"</li>
+                    <li>Propose phased approach: "Phase 1 delivers core value; Phase 2 adds enhancements"</li>
+                    <li>Use MoSCoW framework: Objective prioritization method</li>
+                    <li>Quantify risk: "Attempting all features increases failure probability from 10% to 60%"</li>
+                </ul>
+
+                <h3>Building Stakeholder Buy-In</h3>
+                <ul>
+                    <li><strong>Involve early:</strong> People support what they help create</li>
+                    <li><strong>Show, don't tell:</strong> Demos and prototypes > documents</li>
+                    <li><strong>Share user quotes:</strong> Real voices are compelling</li>
+                    <li><strong>Celebrate progress:</strong> Regular updates on milestones</li>
+                    <li><strong>Address concerns proactively:</strong> Don't wait for resistance</li>
+                </ul>
+
+                <h3>Communicating Trade-Offs</h3>
+                <p><strong>Project Management Triangle:</strong> Fast, Good, Cheap - pick two</p>
+                <ul>
+                    <li>Fast + Good = Expensive (need more resources)</li>
+                    <li>Fast + Cheap = Lower quality (cut corners)</li>
+                    <li>Good + Cheap = Slow (limited resources)</li>
+                </ul>
+                <p>Use this framework to explain why "everything quickly" isn't realistic</p>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Recommended Reading</h2>
+
+            <div class="reading-list">
+                <div class="reading-item">
+                    <h3>"The Design of Everyday Things" by Don Norman</h3>
+                    <p>Classic introduction to user-centered design principles and psychology of usability.</p>
+                </div>
+
+                <div class="reading-item">
+                    <h3>"Sprint" by Jake Knapp (Google Ventures)</h3>
+                    <p>5-day process for rapid prototyping and testing - applicable to our Prototype phase.</p>
+                </div>
+
+                <div class="reading-item">
+                    <h3>"Don't Make Me Think" by Steve Krug</h3>
+                    <p>Web usability essentials - practical, actionable advice for interface design.</p>
+                </div>
+
+                <div class="reading-item">
+                    <h3>"Lean UX" by Jeff Gothelf</h3>
+                    <p>Integrating UX design with Agile development - relevant for our iterative approach.</p>
+                </div>
+
+                <div class="reading-item">
+                    <h3>"Conversational Design" by Erika Hall</h3>
+                    <p>Designing chatbots and voice interfaces - directly applicable to our AI assistant.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Tools & Software</h2>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Research & Synthesis</h3>
+                    <ul>
+                        <li>Miro / Mural (virtual whiteboarding, affinity mapping)</li>
+                        <li>Dovetail (research repository, insight tagging)</li>
+                        <li>Airtable / Notion (organizing research data)</li>
+                        <li>Zoom / Teams (remote interviews with recording)</li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Design & Prototyping</h3>
+                    <ul>
+                        <li>Figma (UI design, interactive prototypes)</li>
+                        <li>Adobe XD (design and prototyping)</li>
+                        <li>InVision (clickable prototypes)</li>
+                        <li>Balsamiq (low-fidelity wireframes)</li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Testing & Analytics</h3>
+                    <ul>
+                        <li>UserTesting.com (remote usability testing)</li>
+                        <li>Hotjar (heatmaps, session recordings)</li>
+                        <li>Google Analytics (usage tracking)</li>
+                        <li>SurveyMonkey / Typeform (surveys)</li>
+                    </ul>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>Confluence / Notion (requirements documentation)</li>
+                        <li>Jira (user story tracking)</li>
+                        <li>GitHub Pages (this website!)</li>
+                        <li>Lucidchart / Miro (journey maps, flows)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Key Takeaways for Our Project</h2>
+
+            <div class="alert info">
+                <h3>Remember These Principles</h3>
+                <ul>
+                    <li><strong>User data beats opinions:</strong> When stakeholders disagree, user research is the tiebreaker</li>
+                    <li><strong>Iterate, don't perfect:</strong> Ship and learn beats endless planning</li>
+                    <li><strong>Fail fast and cheap:</strong> Better to learn from a quick prototype than a late launch</li>
+                    <li><strong>Document everything:</strong> Your defense against scope creep and shifting requirements</li>
+                    <li><strong>Involve users throughout:</strong> Not just research phase - keep testing and validating</li>
+                    <li><strong>Communicate trade-offs:</strong> Help stakeholders understand what's realistic</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

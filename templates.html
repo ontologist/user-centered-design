@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates & Tools - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html" class="active">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Templates & Tools</h1>
+        <p>Ready-to-use templates for conducting user research, documenting requirements, and managing the design thinking process.</p>
+
+        <section class="templates-section">
+            <h2 id="interview-guide">User Interview Guide</h2>
+
+            <div class="template-box">
+                <h3>Employee Interview Script (30-45 minutes)</h3>
+
+                <div class="template-content">
+                    <h4>1. Introduction (5 minutes)</h4>
+                    <blockquote>
+                        <p>"Thank you for taking time to speak with me today. We're working on improving how employees get HR information and support, and your input is invaluable."</p>
+
+                        <p>"This conversation will take about 30-45 minutes. There are no right or wrong answers - I want to understand your real experiences and needs."</p>
+
+                        <p>"Everything you share is confidential. We'll use insights from multiple interviews to inform our design, but your name won't be attached to any specific feedback."</p>
+
+                        <p>"Do I have your permission to record this conversation for note-taking purposes only? [If yes, start recording]"</p>
+
+                        <p>"Do you have any questions before we begin?"</p>
+                    </blockquote>
+
+                    <h4>2. Background (5 minutes)</h4>
+                    <ul>
+                        <li>What's your role here? How long have you been with the company?</li>
+                        <li>Walk me through a typical day - what does your work involve?</li>
+                        <li>How would you describe your comfort level with technology? (not technical / somewhat technical / very technical)</li>
+                    </ul>
+
+                    <h4>3. Current State - Finding HR Information (15 minutes)</h4>
+                    <ul>
+                        <li>When was the last time you had an HR question or needed HR information? What was it about?</li>
+                        <li>Walk me through exactly what you did to find the answer. Where did you go first? Then what?</li>
+                        <li>How long did it take to get the information you needed?</li>
+                        <li>Did you get a satisfactory answer? Why or why not?</li>
+                        <li>On a scale of 1-10, how easy was it to find what you needed? Why that score?</li>
+                        <li>What's the most frustrating part about getting HR information today?</li>
+                        <li>What HR questions or tasks do you deal with most frequently?</li>
+                        <li>Are there times when you don't ask an HR question even though you have one? Why?</li>
+                    </ul>
+
+                    <h4>4. Needs & Pain Points (10 minutes)</h4>
+                    <ul>
+                        <li>If you could wave a magic wand and fix one thing about getting HR support, what would it be?</li>
+                        <li>When you have an HR question, what's more important: getting an immediate answer or talking to a real person? Why?</li>
+                        <li>Have you ever received incorrect HR information? What happened?</li>
+                        <li>What makes you trust that HR information is accurate and current?</li>
+                        <li>How do you prefer to access information? (search, ask someone, browse menus, voice assistant, etc.)</li>
+                    </ul>
+
+                    <h4>5. Future Vision (5-10 minutes)</h4>
+                    <ul>
+                        <li>Have you used chatbots or AI assistants (like Alexa, Siri, ChatGPT)? What was your experience?</li>
+                        <li>How would you feel about an AI assistant that could answer HR questions 24/7?</li>
+                        <li>What concerns, if any, would you have about using AI for HR information?</li>
+                        <li>Imagine your ideal experience for getting HR help - walk me through what that looks like.</li>
+                    </ul>
+
+                    <h4>6. Wrap-Up (5 minutes)</h4>
+                    <ul>
+                        <li>Is there anything we didn't cover that you think is important for us to know?</li>
+                        <li>If we build this and want your feedback on an early version, would you be willing to participate? [Collect contact if yes]</li>
+                        <li>Thank you so much for your time - your insights are incredibly helpful.</li>
+                    </ul>
+                </div>
+
+                <div class="adaptation-note">
+                    <h4>Adaptations for Other Personas</h4>
+                    <p><strong>For Managers:</strong> Add questions about HR questions from team members, manager-specific needs, balancing privacy and need-to-know</p>
+                    <p><strong>For HR Team:</strong> Add questions about most common employee questions, what could be self-service, content management needs, escalation preferences</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="observation-protocol">Contextual Observation Protocol</h2>
+
+            <div class="template-box">
+                <h3>Observation Session Guide</h3>
+
+                <div class="template-content">
+                    <h4>Setup</h4>
+                    <ol>
+                        <li>Ask participant to perform a real HR task they need to do anyway (not staged)</li>
+                        <li>Position yourself so you can see their screen</li>
+                        <li>Explain: "Please do this task as you normally would. Think aloud - tell me what you're thinking and why you're making the choices you're making. I won't interrupt or help unless you ask."</li>
+                        <li>Start timer; take notes</li>
+                    </ol>
+
+                    <h4>What to Observe</h4>
+                    <table class="observation-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>What to Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Actions</td>
+                                <td>What they click, where they navigate, what they type in search</td>
+                            </tr>
+                            <tr>
+                                <td>Sequence</td>
+                                <td>Order of steps, backtracks, repeated actions</td>
+                            </tr>
+                            <tr>
+                                <td>Hesitations</td>
+                                <td>Where they pause, appear uncertain, or say "hmm..."</td>
+                            </tr>
+                            <tr>
+                                <td>Frustrations</td>
+                                <td>Sighs, complaints, negative comments, giving up</td>
+                            </tr>
+                            <tr>
+                                <td>Workarounds</td>
+                                <td>Non-standard methods, asking colleagues, external resources</td>
+                            </tr>
+                            <tr>
+                                <td>Context</td>
+                                <td>Time of day, interruptions, multitasking</td>
+                            </tr>
+                            <tr>
+                                <td>Quotes</td>
+                                <td>Exact words they say (especially revealing phrases)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>After Task Completion</h4>
+                    <ul>
+                        <li>How did that compare to a typical experience?</li>
+                        <li>What made that hard/easy?</li>
+                        <li>Did you get what you needed?</li>
+                        <li>Follow up on anything you observed: "I noticed you [behavior] - tell me about that"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="journey-map">User Journey Map Template</h2>
+
+            <div class="template-box">
+                <h3>Journey Mapping Framework</h3>
+
+                <div class="template-content">
+                    <p><strong>Scenario:</strong> [e.g., "Employee trying to find out how many vacation days they have left"]</p>
+
+                    <table class="journey-map-table">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Actions</th>
+                                <th>Touchpoints</th>
+                                <th>Emotions</th>
+                                <th>Pain Points</th>
+                                <th>Opportunities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Awareness</strong><br>Realize need</td>
+                                <td>Planning vacation, gets question from manager</td>
+                                <td>Calendar, email, manager</td>
+                                <td>Neutral, slightly curious</td>
+                                <td>Doesn't know where to find info</td>
+                                <td>Proactive notification before planning?</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Search</strong><br>Look for answer</td>
+                                <td>Checks email, searches intranet, tries Workday</td>
+                                <td>Email, SharePoint, Workday</td>
+                                <td>Hopeful → frustrated</td>
+                                <td>Multiple systems, unclear where to look</td>
+                                <td>Single entry point, contextual</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Navigation</strong><br>Find resource</td>
+                                <td>Clicks through menus, reads policy docs</td>
+                                <td>HR portal, PDF documents</td>
+                                <td>Confused, impatient</td>
+                                <td>Too much text, unclear navigation</td>
+                                <td>Direct answer, not full policy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. Comprehension</strong><br>Understand info</td>
+                                <td>Reads policy, tries to apply to self</td>
+                                <td>Policy document</td>
+                                <td>Uncertain, anxious</td>
+                                <td>Generic policy, not personalized</td>
+                                <td>Show MY specific data</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5. Resolution</strong><br>Get answer</td>
+                                <td>Emails HR to confirm, waits for response</td>
+                                <td>Email, HR team</td>
+                                <td>Relieved but delayed</td>
+                                <td>Takes hours/days for simple question</td>
+                                <td>Instant, accurate self-service</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Summary Insights</h4>
+                    <ul>
+                        <li><strong>Biggest Pain Point:</strong> [e.g., Information scattered across multiple systems]</li>
+                        <li><strong>Highest Impact Opportunity:</strong> [e.g., Single source for personalized HR data]</li>
+                        <li><strong>Emotional Low Point:</strong> [e.g., Frustration at Stage 2 - not knowing where to look]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="persona-template">Persona Documentation Template</h2>
+
+            <div class="template-box">
+                <h3>Persona Profile</h3>
+
+                <div class="template-content">
+                    <h4>[Persona Name] - [Role Type]</h4>
+
+                    <p><strong>Photo/Illustration:</strong> [Visual representation]</p>
+
+                    <p><strong>Quote:</strong> "[A real quote from research that captures their essence]"</p>
+
+                    <h4>Demographics</h4>
+                    <ul>
+                        <li>Age range:</li>
+                        <li>Department/Function:</li>
+                        <li>Tenure:</li>
+                        <li>Technical comfort level:</li>
+                        <li>Location/Work mode:</li>
+                    </ul>
+
+                    <h4>Goals & Motivations</h4>
+                    <ul>
+                        <li>[Goal 1 from research]</li>
+                        <li>[Goal 2 from research]</li>
+                        <li>[Goal 3 from research]</li>
+                    </ul>
+
+                    <h4>Pain Points & Frustrations</h4>
+                    <ul>
+                        <li>[Pain point 1 with supporting quote]</li>
+                        <li>[Pain point 2 with supporting quote]</li>
+                        <li>[Pain point 3 with supporting quote]</li>
+                    </ul>
+
+                    <h4>Behaviors & Preferences</h4>
+                    <ul>
+                        <li>How they currently find HR info:</li>
+                        <li>Preferred communication channels:</li>
+                        <li>Technology usage patterns:</li>
+                        <li>When they ask for help vs. self-serve:</li>
+                    </ul>
+
+                    <h4>Needs from HR AI Assistant</h4>
+                    <ul>
+                        <li>[Specific need 1]</li>
+                        <li>[Specific need 2]</li>
+                        <li>[Specific need 3]</li>
+                    </ul>
+
+                    <h4>Use Case Scenarios</h4>
+                    <ul>
+                        <li>"I need to [scenario] so that [outcome]"</li>
+                        <li>"I need to [scenario] so that [outcome]"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="requirements-template">Requirements Documentation Template</h2>
+
+            <div class="template-box">
+                <h3>User Story & Requirements Format</h3>
+
+                <div class="template-content">
+                    <h4>User Story Template</h4>
+                    <div class="code-block">
+                        As a [persona/role]
+                        I want to [action/capability]
+                        So that [benefit/value]
+
+                        Acceptance Criteria:
+                        - [Specific, testable criterion 1]
+                        - [Specific, testable criterion 2]
+                        - [Specific, testable criterion 3]
+
+                        Priority: [Must Have / Should Have / Could Have / Won't Have]
+                        Effort Estimate: [Small / Medium / Large]
+                        Linked to Insight: [Reference to research finding]
+                    </div>
+
+                    <h4>Example User Story</h4>
+                    <div class="code-block">
+                        As an employee
+                        I want to ask natural language questions about my benefits
+                        So that I can quickly understand my options without reading lengthy policy documents
+
+                        Acceptance Criteria:
+                        - System understands common benefit questions (tested with 20 example questions)
+                        - Responses are personalized to my specific plan and location
+                        - Information includes my-specific data (e.g., "You have X remaining") not just general policy
+                        - Response time is under 3 seconds
+                        - Source of information is clearly cited
+                        - Option to "speak to HR" is always available
+
+                        Priority: Must Have
+                        Effort Estimate: Large
+                        Linked to Insight: 85% of employees struggle to find personalized benefit information (Empathy Phase Report, p. 12)
+                    </div>
+
+                    <h4>Functional Requirements Template</h4>
+                    <table class="requirements-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Requirement</th>
+                                <th>Priority</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FR-001</td>
+                                <td>System must support natural language input (text)</td>
+                                <td>Must Have</td>
+                                <td>Users expect conversational interaction per research findings</td>
+                            </tr>
+                            <tr>
+                                <td>FR-002</td>
+                                <td>System must retrieve user-specific data from Workday based on login</td>
+                                <td>Must Have</td>
+                                <td>Personalization is top user need (12/15 interviews mentioned)</td>
+                            </tr>
+                            <tr>
+                                <td>FR-003</td>
+                                <td>System should support voice input as alternative to typing</td>
+                                <td>Should Have</td>
+                                <td>Accessibility benefit; some users prefer voice (5/15 interviews)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="usability-test-plan">Usability Test Plan Template</h2>
+
+            <div class="template-box">
+                <h3>Test Session Structure</h3>
+
+                <div class="template-content">
+                    <h4>Test Objectives</h4>
+                    <ul>
+                        <li>[What are you trying to learn?]</li>
+                        <li>[Specific hypotheses to validate?]</li>
+                    </ul>
+
+                    <h4>Participants</h4>
+                    <ul>
+                        <li>Number: 5-8 per round</li>
+                        <li>Personas: [Mix of employee/manager/HR]</li>
+                        <li>Recruitment: [How you'll find them]</li>
+                    </ul>
+
+                    <h4>Test Scenarios</h4>
+                    <ol>
+                        <li><strong>Task 1:</strong> [Realistic scenario]
+                            <ul>
+                                <li>Success criteria: [What counts as success?]</li>
+                                <li>Expected time: [X minutes]</li>
+                            </ul>
+                        </li>
+                        <li><strong>Task 2:</strong> [Realistic scenario]
+                            <ul>
+                                <li>Success criteria:</li>
+                                <li>Expected time:</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h4>Metrics to Capture</h4>
+                    <ul>
+                        <li>Task success rate (% who complete successfully)</li>
+                        <li>Time on task</li>
+                        <li>Errors / wrong paths</li>
+                        <li>Satisfaction rating (1-5 scale)</li>
+                        <li>Qualitative observations</li>
+                    </ul>
+
+                    <h4>Test Script</h4>
+                    <blockquote>
+                        <p><strong>Intro:</strong> "Thank you for helping us test this. We're testing the design, not you - there are no wrong answers. Please think aloud as you go."</p>
+
+                        <p><strong>For each task:</strong> "Imagine [scenario]. Show me how you would [accomplish goal]. Remember to think aloud - tell me what you're thinking."</p>
+
+                        <p><strong>During task:</strong> [Don't help. Take notes. Only intervene if completely stuck.]</p>
+
+                        <p><strong>After each task:</strong> "How was that? What did you expect to happen? What would you change?"</p>
+
+                        <p><strong>Wrap-up:</strong> "Overall, what did you like? What frustrated you? Would you use this? Any other feedback?"</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2 id="moscow-prioritization">MoSCoW Prioritization Worksheet</h2>
+
+            <div class="template-box">
+                <h3>Feature Prioritization Framework</h3>
+
+                <div class="template-content">
+                    <p>For each feature or requirement, categorize as Must Have, Should Have, Could Have, or Won't Have (this time).</p>
+
+                    <table class="moscow-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Definition</th>
+                                <th>Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>MUST HAVE</strong></td>
+                                <td>Critical. System doesn't work without this. Non-negotiable.</td>
+                                <td>
+                                    - Answer common HR questions accurately<br>
+                                    - Secure user authentication<br>
+                                    - Escalation to human HR<br>
+                                    - Mobile responsive
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>SHOULD HAVE</strong></td>
+                                <td>Important but not vital. System works without it but with reduced value.</td>
+                                <td>
+                                    - Personalized responses based on user data<br>
+                                    - Search history<br>
+                                    - Save favorite questions<br>
+                                    - Integration with calendar
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>COULD HAVE</strong></td>
+                                <td>Nice to have. Include if time/resources allow. Small impact if missing.</td>
+                                <td>
+                                    - Voice interaction<br>
+                                    - Avatar visualization<br>
+                                    - Multilingual support<br>
+                                    - Dark mode
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>WON'T HAVE</strong></td>
+                                <td>Out of scope for this release. May revisit later.</td>
+                                <td>
+                                    - Full Workday transaction capabilities<br>
+                                    - Mobile native app<br>
+                                    - Integration with all company systems<br>
+                                    - AI-powered predictive analytics
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Prioritization Questions</h4>
+                    <p>For each feature, ask:</p>
+                    <ul>
+                        <li>Does it solve a top user problem from research?</li>
+                        <li>How many users does it impact?</li>
+                        <li>How severely would missing it affect the solution?</li>
+                        <li>Is it technically feasible within constraints?</li>
+                        <li>What's the effort vs. value trade-off?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <h2>Quick Reference Checklists</h2>
+
+            <div class="checklist-grid">
+                <div class="checklist-card">
+                    <h3>User Interview Checklist</h3>
+                    <ul class="checklist">
+                        <li>☐ Recruit 5-8 participants per persona</li>
+                        <li>☐ Schedule 30-45 min sessions</li>
+                        <li>☐ Prepare interview script</li>
+                        <li>☐ Get recording consent</li>
+                        <li>☐ Take detailed notes</li>
+                        <li>☐ Capture direct quotes</li>
+                        <li>☐ Write up notes within 24 hours</li>
+                        <li>☐ Tag insights by theme</li>
+                    </ul>
+                </div>
+
+                <div class="checklist-card">
+                    <h3>Usability Test Checklist</h3>
+                    <ul class="checklist">
+                        <li>☐ Define test objectives</li>
+                        <li>☐ Create realistic task scenarios</li>
+                        <li>☐ Recruit 5-8 test participants</li>
+                        <li>☐ Prepare working prototype</li>
+                        <li>☐ Write test script</li>
+                        <li>☐ Set up recording/note-taking</li>
+                        <li>☐ Conduct sessions (don't help!)</li>
+                        <li>☐ Measure key metrics</li>
+                        <li>☐ Synthesize findings</li>
+                        <li>☐ Iterate on design</li>
+                    </ul>
+                </div>
+
+                <div class="checklist-card">
+                    <h3>Requirements Review Checklist</h3>
+                    <ul class="checklist">
+                        <li>☐ Linked to user research insight</li>
+                        <li>☐ Written in user-centered language</li>
+                        <li>☐ Specific and testable</li>
+                        <li>☐ Prioritized (MoSCoW)</li>
+                        <li>☐ Technical feasibility assessed</li>
+                        <li>☐ Acceptance criteria defined</li>
+                        <li>☐ Stakeholders reviewed</li>
+                        <li>☐ Documented and accessible</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>

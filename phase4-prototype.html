@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 4: Prototype - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html" class="active">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="phase-header prototype-phase">
+            <div class="phase-number-large">4</div>
+            <div class="phase-title">
+                <h1>Prototype Phase</h1>
+                <p>Building, Testing, and Iterating on Solutions</p>
+            </div>
+        </div>
+
+        <section class="phase-content">
+            <h2>Phase Overview</h2>
+            <p>The Prototype phase is where ideas become tangible. We build quick, testable versions of our solutions, gather user feedback, and iterate. The goal is to learn fast and fail cheap before committing to full development.</p>
+
+            <div class="phase-objectives">
+                <h3>Key Objectives</h3>
+                <ul>
+                    <li>Build low to high-fidelity prototypes iteratively</li>
+                    <li>Test prototypes with real users</li>
+                    <li>Gather feedback and identify usability issues</li>
+                    <li>Iterate based on testing insights</li>
+                    <li>Validate that solutions solve the defined problems</li>
+                    <li>De-risk development by learning early</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Prototype Fidelity Levels</h2>
+            <p>Start low-fidelity, increase fidelity based on what you need to learn</p>
+
+            <div class="fidelity-grid">
+                <div class="fidelity-card low">
+                    <h3>Low-Fidelity (Week 1-2)</h3>
+                    <h4>Purpose: Test concepts and flows</h4>
+
+                    <p><strong>Methods:</strong></p>
+                    <ul>
+                        <li>Paper prototypes / sketches</li>
+                        <li>Clickable wireframes (Figma, Balsamiq)</li>
+                        <li>Wizard of Oz testing (human pretending to be AI)</li>
+                        <li>Conversation script walkthroughs</li>
+                    </ul>
+
+                    <p><strong>What to Test:</strong></p>
+                    <ul>
+                        <li>Do users understand the concept?</li>
+                        <li>Is the navigation logical?</li>
+                        <li>What language resonates?</li>
+                        <li>Where do users get confused?</li>
+                    </ul>
+
+                    <p><strong>Effort:</strong> Hours to days</p>
+                </div>
+
+                <div class="fidelity-card medium">
+                    <h3>Medium-Fidelity (Week 3-4)</h3>
+                    <h4>Purpose: Test interactions and content</h4>
+
+                    <p><strong>Methods:</strong></p>
+                    <ul>
+                        <li>Interactive mockups with real content</li>
+                        <li>Rule-based chatbot (no AI yet)</li>
+                        <li>Working UI with static data</li>
+                        <li>Scenario-based demos</li>
+                    </ul>
+
+                    <p><strong>What to Test:</strong></p>
+                    <ul>
+                        <li>Does the interaction feel natural?</li>
+                        <li>Is the information architecture clear?</li>
+                        <li>Are responses helpful and accurate?</li>
+                        <li>How does escalation work?</li>
+                    </ul>
+
+                    <p><strong>Effort:</strong> Days to 2 weeks</p>
+                </div>
+
+                <div class="fidelity-card high">
+                    <h3>High-Fidelity (Week 5-8)</h3>
+                    <h4>Purpose: Test technical integration and polish</h4>
+
+                    <p><strong>Methods:</strong></p>
+                    <ul>
+                        <li>Working prototype with AI/NLP</li>
+                        <li>Workday integration (read-only)</li>
+                        <li>Avatar with lip-sync (if validated)</li>
+                        <li>Pilot with limited users</li>
+                    </ul>
+
+                    <p><strong>What to Test:</strong></p>
+                    <ul>
+                        <li>Does it work reliably?</li>
+                        <li>Is performance acceptable?</li>
+                        <li>Are responses accurate?</li>
+                        <li>Will users adopt it?</li>
+                    </ul>
+
+                    <p><strong>Effort:</strong> 2-8 weeks</p>
+                </div>
+            </div>
+
+            <div class="alert info">
+                <h3>Note on Current Demo</h3>
+                <p>The Tuesday demo (as discussed in meeting) is a technical proof of concept, not a tested prototype. This phase adds the critical user testing and iteration that transforms a demo into a validated solution ready for production.</p>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Testing Methodology</h2>
+
+            <div class="testing-approach">
+                <h3>Usability Testing Sessions</h3>
+
+                <h4>Structure (60 minutes)</h4>
+                <ol>
+                    <li><strong>Introduction (5 min):</strong> Set expectations, explain think-aloud protocol</li>
+                    <li><strong>Background Questions (5 min):</strong> Understand user's current process</li>
+                    <li><strong>Task Scenarios (40 min):</strong> Ask user to complete realistic tasks</li>
+                    <li><strong>Debrief (10 min):</strong> Overall impressions, suggestions, concerns</li>
+                </ol>
+
+                <h4>Sample Task Scenarios</h4>
+                <ul>
+                    <li><strong>Employee:</strong> "You want to know how many vacation days you have left. Use the system to find out."</li>
+                    <li><strong>Manager:</strong> "One of your team members asked about parental leave policy. Use the system to help them."</li>
+                    <li><strong>HR:</strong> "An employee is confused about their benefits enrollment. How would you use this system to help?"</li>
+                </ul>
+
+                <h4>What to Observe</h4>
+                <ul>
+                    <li>Time to complete task</li>
+                    <li>Number of errors or wrong paths</li>
+                    <li>Confusion points (facial expressions, hesitations)</li>
+                    <li>What they say they like/dislike</li>
+                    <li>Whether they accomplish the goal</li>
+                </ul>
+
+                <a href="templates.html#usability-test-plan" class="btn">View Test Plan Template →</a>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Testing Metrics</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Task Success Rate</h3>
+                    <p>% of users who complete task successfully</p>
+                    <p><strong>Target:</strong> ≥ 80%</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Time on Task</h3>
+                    <p>Average time to complete key scenarios</p>
+                    <p><strong>Target:</strong> &lt; 2 minutes for common questions</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Error Rate</h3>
+                    <p>Number of wrong paths or mistakes</p>
+                    <p><strong>Target:</strong> &lt; 1 error per task</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Satisfaction Score</h3>
+                    <p>Post-task rating (1-5 scale)</p>
+                    <p><strong>Target:</strong> ≥ 4.0/5.0</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Perceived Accuracy</h3>
+                    <p>"I trust this information is correct"</p>
+                    <p><strong>Target:</strong> ≥ 90% agree</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Likelihood to Use</h3>
+                    <p>"I would use this for my HR questions"</p>
+                    <p><strong>Target:</strong> ≥ 75% agree</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Iteration Cycles</h2>
+
+            <div class="iteration-process">
+                <h3>Build → Test → Learn → Iterate</h3>
+
+                <div class="cycle-steps">
+                    <div class="cycle-step">
+                        <h4>1. Build</h4>
+                        <p>Create prototype addressing specific hypotheses</p>
+                        <ul>
+                            <li>Focus on what you need to learn</li>
+                            <li>Don't polish too early</li>
+                            <li>Build just enough to test</li>
+                        </ul>
+                    </div>
+
+                    <div class="cycle-step">
+                        <h4>2. Test</h4>
+                        <p>Put prototype in front of 5-8 real users</p>
+                        <ul>
+                            <li>Observe actual behavior</li>
+                            <li>Ask follow-up questions</li>
+                            <li>Document issues and insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="cycle-step">
+                        <h4>3. Learn</h4>
+                        <p>Synthesize findings into actionable insights</p>
+                        <ul>
+                            <li>What worked? What didn't?</li>
+                            <li>Why did users struggle?</li>
+                            <li>What surprised us?</li>
+                        </ul>
+                    </div>
+
+                    <div class="cycle-step">
+                        <h4>4. Iterate</h4>
+                        <p>Refine prototype based on learnings</p>
+                        <ul>
+                            <li>Fix critical usability issues</li>
+                            <li>Improve based on feedback</li>
+                            <li>Prepare for next test round</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p><strong>Typical Cycles:</strong> 3-5 iterations of increasing fidelity</p>
+                <p><strong>Users Per Cycle:</strong> 5-8 (catches 80% of usability issues)</p>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Key Decisions to Validate</h2>
+
+            <div class="decisions-list">
+                <h3>Critical Questions to Answer Through Testing</h3>
+
+                <div class="decision-item">
+                    <h4>Avatar vs. Text-Only Interface</h4>
+                    <p><strong>Test:</strong> Build both, test with same scenarios</p>
+                    <p><strong>Measure:</strong> User preference, task completion, trust/satisfaction</p>
+                    <p><strong>Consider:</strong> Avatar adds complexity - does it add enough value?</p>
+                </div>
+
+                <div class="decision-item">
+                    <h4>Voice vs. Typing Interaction</h4>
+                    <p><strong>Test:</strong> Voice prototype vs. text chat</p>
+                    <p><strong>Measure:</strong> Speed, accuracy, comfort level, context (privacy concerns?)</p>
+                    <p><strong>Consider:</strong> Voice quality issues noted in meeting</p>
+                </div>
+
+                <div class="decision-item">
+                    <h4>Proactive vs. Reactive Information</h4>
+                    <p><strong>Test:</strong> System suggests info vs. user must ask</p>
+                    <p><strong>Measure:</strong> Usefulness, annoyance, task efficiency</p>
+                    <p><strong>Consider:</strong> "You might need to know..." vs. wait for questions</p>
+                </div>
+
+                <div class="decision-item">
+                    <h4>Escalation Path Design</h4>
+                    <p><strong>Test:</strong> How users move from bot to human help</p>
+                    <p><strong>Measure:</strong> Ease of escalation, context preservation, satisfaction</p>
+                    <p><strong>Consider:</strong> "I need a person" should always be easy</p>
+                </div>
+
+                <div class="decision-item">
+                    <h4>Personalization Level</h4>
+                    <p><strong>Test:</strong> Generic vs. highly personalized responses</p>
+                    <p><strong>Measure:</strong> Relevance, creepiness factor, privacy comfort</p>
+                    <p><strong>Consider:</strong> Balance helpfulness with privacy concerns</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Prototype Scope</h2>
+
+            <div class="alert warning">
+                <h3>Scope Management</h3>
+                <p>Prototype only the "Must Have" features from Define phase. Don't prototype everything - focus on highest risk and highest value elements.</p>
+            </div>
+
+            <h3>Recommended Prototype Scope</h3>
+            <ul>
+                <li><strong>Core interaction model</strong> (e.g., text chat with avatar option)</li>
+                <li><strong>3-5 most common user scenarios</strong> (not all possible questions)</li>
+                <li><strong>Personalization for one persona</strong> first (expand if successful)</li>
+                <li><strong>Basic escalation path</strong> (doesn't need full ticketing integration)</li>
+                <li><strong>Key Workday integration</strong> (start with read-only, one data type)</li>
+            </ul>
+
+            <p><strong>Remember:</strong> The Tuesday demo is not this prototype - it's a technical proof of concept. This prototype adds user validation.</p>
+        </section>
+
+        <section class="phase-content">
+            <h2>Deliverables</h2>
+
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Tested Prototypes</h3>
+                    <ul>
+                        <li>Low-fidelity concepts</li>
+                        <li>Medium-fidelity interactive mockups</li>
+                        <li>High-fidelity working prototype</li>
+                        <li>Documentation of iterations</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Test Results</h3>
+                    <ul>
+                        <li>Usability test reports (each round)</li>
+                        <li>Metrics summary</li>
+                        <li>Key findings and insights</li>
+                        <li>User quotes and feedback</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Design Specifications</h3>
+                    <ul>
+                        <li>Final design mockups</li>
+                        <li>Interaction flows</li>
+                        <li>Content guidelines</li>
+                        <li>Technical requirements</li>
+                    </ul>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Validation Report</h3>
+                    <ul>
+                        <li>Problems solved (linked to Define phase)</li>
+                        <li>User acceptance evidence</li>
+                        <li>Remaining risks/issues</li>
+                        <li>Recommendations for implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase-content">
+            <h2>Success Criteria</h2>
+
+            <div class="success-checklist">
+                <h3>This phase is complete when:</h3>
+                <ul class="checklist">
+                    <li>✓ We've completed 3-5 rounds of build-test-learn-iterate</li>
+                    <li>✓ At least 20-30 users have tested prototypes</li>
+                    <li>✓ Task success rate ≥ 80%</li>
+                    <li>✓ User satisfaction ≥ 4.0/5.0</li>
+                    <li>✓ Critical usability issues resolved</li>
+                    <li>✓ Design decisions validated (avatar, voice, etc.)</li>
+                    <li>✓ Prototype solves the prioritized problems from Define phase</li>
+                    <li>✓ Technical feasibility confirmed by development team</li>
+                    <li>✓ Stakeholders approve design for production build</li>
+                    <li>✓ We can confidently answer: "Will users actually use this?"</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="phase-navigation">
+            <a href="phase3-ideate.html" class="btn-nav">← Previous: Ideate</a>
+            <a href="phase5-implement.html" class="btn-nav-next">Next: Implement Phase →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
