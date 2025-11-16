@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona Development - HR AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HR AI Assistant Project</h1>
+            <p class="tagline">User-Centered Design Requirements Gathering</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="context.html">Project Context</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="personas.html" class="active">Personas</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Design Process ▾</a>
+                    <div class="dropdown-content">
+                        <a href="phase1-empathize.html">1. Empathize</a>
+                        <a href="phase2-define.html">2. Define</a>
+                        <a href="phase3-ideate.html">3. Ideate</a>
+                        <a href="phase4-prototype.html">4. Prototype</a>
+                        <a href="phase5-implement.html">5. Implement</a>
+                    </div>
+                </li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Persona Development</h1>
+
+        <section class="persona-importance">
+            <h2>Why Personas Are Critical for Success</h2>
+
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <h3>🎯 Focus Development Efforts</h3>
+                    <p>Personas prevent feature creep by providing a clear answer to "Would [Persona Name] use this?" If the answer is no, don't build it.</p>
+                </div>
+
+                <div class="importance-card">
+                    <h3>🤝 Build Stakeholder Empathy</h3>
+                    <p>When stakeholders disagree, referring to persona needs (backed by research) provides objective decision criteria instead of opinions.</p>
+                </div>
+
+                <div class="importance-card">
+                    <h3>💡 Drive User-Centered Decisions</h3>
+                    <p>Every design choice, feature prioritization, and trade-off discussion starts with: "What does our persona need and why?"</p>
+                </div>
+
+                <div class="importance-card">
+                    <h3>📊 Align Cross-Functional Teams</h3>
+                    <p>When IT, HR, and executives share the same understanding of who they're building for, collaboration improves dramatically.</p>
+                </div>
+
+                <div class="importance-card">
+                    <h3>✅ Validate Requirements</h3>
+                    <p>Personas help test requirements: "Would this solve [Persona Name]'s problem? Is this how they would actually use it?"</p>
+                </div>
+
+                <div class="importance-card">
+                    <h3>📈 Measure Success</h3>
+                    <p>Success metrics tied to persona goals are more meaningful than generic KPIs. "Did we reduce Sarah's time to find HR info?"</p>
+                </div>
+            </div>
+
+            <div class="alert warning">
+                <h3>⚠️ Critical for This Project</h3>
+                <p><strong>Your current challenge:</strong> Eduardo is pushing for broad functionality while the team faces capacity constraints and unclear requirements.</p>
+                <p><strong>How personas help:</strong> When Eduardo requests new features, you can respond with data: "Our research shows Employee Persona Sarah's top 3 needs are X, Y, Z. Feature A addresses need X (high priority). Feature B doesn't align with any persona need (deprioritize)."</p>
+                <p>This transforms subjective debates into objective, research-backed decisions.</p>
+            </div>
+        </section>
+
+        <section class="persona-methodology">
+            <h2>Persona Development Best Practices</h2>
+
+            <div class="methodology-content">
+                <h3>What Makes a Good Persona?</h3>
+                <ul>
+                    <li><strong>Research-Based:</strong> Derived from real user interviews, observations, and data - not assumptions</li>
+                    <li><strong>Specific:</strong> Detailed enough to feel like a real person, not a generic "user"</li>
+                    <li><strong>Goal-Oriented:</strong> Focused on what users want to accomplish, not just demographics</li>
+                    <li><strong>Limited in Number:</strong> 3-5 primary personas maximum (too many dilutes focus)</li>
+                    <li><strong>Actionable:</strong> Provides clear guidance for design and development decisions</li>
+                    <li><strong>Shared Understanding:</strong> Everyone on the team knows and references them</li>
+                </ul>
+
+                <h3>Common Persona Mistakes to Avoid</h3>
+                <div class="mistakes-grid">
+                    <div class="mistake-item">
+                        <h4>❌ Made-Up Personas</h4>
+                        <p>Creating personas from assumptions without user research leads to building for imaginary users.</p>
+                        <p><strong>Instead:</strong> Base every persona on at least 5-8 real user interviews</p>
+                    </div>
+
+                    <div class="mistake-item">
+                        <h4>❌ Too Many Personas</h4>
+                        <p>Creating a persona for every possible user type dilutes focus and makes decision-making harder.</p>
+                        <p><strong>Instead:</strong> Identify 3-5 primary personas that represent the majority of use cases</p>
+                    </div>
+
+                    <div class="mistake-item">
+                        <h4>❌ Demographics Over Goals</h4>
+                        <p>Focusing on age, location, job title without understanding motivations and needs.</p>
+                        <p><strong>Instead:</strong> Lead with goals, pain points, and behaviors. Demographics are supporting context.</p>
+                    </div>
+
+                    <div class="mistake-item">
+                        <h4>❌ One-Time Creation</h4>
+                        <p>Creating personas once and never updating them as you learn more.</p>
+                        <p><strong>Instead:</strong> Treat personas as living documents that evolve with ongoing research</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-references">
+            <h2>Industry-Standard Persona Resources</h2>
+
+            <div class="reference-grid">
+                <div class="reference-card">
+                    <h3>📘 Nielsen Norman Group - Personas</h3>
+                    <p>The gold standard in UX research. Comprehensive guides on creating and using personas effectively.</p>
+                    <a href="https://www.nngroup.com/articles/persona/" target="_blank" class="btn-small">Read Article →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Personas must be based on research, not assumptions. Use them as a design tool, not a documentation exercise.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>📗 Interaction Design Foundation - Personas</h3>
+                    <p>Free comprehensive course and articles on persona development methodology.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/personas" target="_blank" class="btn-small">Explore Resources →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Focus on goals and behaviors, not just demographics. Include scenarios and context.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>📕 IDEO Design Kit - Personas</h3>
+                    <p>Human-centered design approach to creating personas from field research.</p>
+                    <a href="https://www.designkit.org/methods/personas" target="_blank" class="btn-small">View Method →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Create personas as a team activity to build shared understanding and empathy.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>📙 GOV.UK Service Manual - User Personas</h3>
+                    <p>Government digital service standards for creating user personas for public services.</p>
+                    <a href="https://www.gov.uk/service-manual/user-research/researching-user-needs" target="_blank" class="btn-small">Read Guide →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Start with user needs, validate through research, update regularly as you learn.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>📔 UX Matters - Creating Personas</h3>
+                    <p>Practical guide to persona creation from research data synthesis to documentation.</p>
+                    <a href="https://www.uxmatters.com/mt/archives/2007/09/creating-personas.php" target="_blank" class="btn-small">Read Article →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Use real quotes and stories. Make personas memorable and relatable.</p>
+                </div>
+
+                <div class="reference-card">
+                    <h3>📓 Mailchimp Design - Personas</h3>
+                    <p>Real-world example of how a major company uses personas in their design process.</p>
+                    <a href="https://mailchimp.com/resources/persona-research/" target="_blank" class="btn-small">See Example →</a>
+                    <p class="reference-note"><strong>Key Takeaway:</strong> Good personas tell a story and help teams empathize with users.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-form-section">
+            <h2>Interactive Persona Builder</h2>
+            <p>Fill out the form below to create a research-based persona. Upload a photo, complete all fields based on your user research data, and generate a professional PDF document.</p>
+
+            <div class="alert info">
+                <strong>📋 Before You Start:</strong> Ensure you've conducted at least 5-8 user interviews for this persona type. Use real quotes, behaviors, and needs from your research - not assumptions.
+            </div>
+
+            <form id="personaForm" class="persona-builder-form">
+                <!-- Photo Upload Section -->
+                <div class="form-section">
+                    <h3>Persona Photo</h3>
+                    <div class="photo-upload-area" id="photoUploadArea">
+                        <div class="upload-placeholder" id="uploadPlaceholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p><strong>Drag & drop image here</strong> or click to browse</p>
+                            <p class="upload-hint">Recommended: Professional headshot or representative illustration (JPG, PNG, max 5MB)</p>
+                        </div>
+                        <img id="photoPreview" class="photo-preview" style="display: none;" alt="Persona photo preview">
+                        <input type="file" id="photoInput" accept="image/*" style="display: none;">
+                        <button type="button" id="removePhoto" class="btn-remove" style="display: none;">Remove Photo</button>
+                    </div>
+                </div>
+
+                <!-- Basic Information -->
+                <div class="form-section">
+                    <h3>1. Basic Information</h3>
+
+                    <div class="form-group">
+                        <label for="personaName">Persona Name *</label>
+                        <input type="text" id="personaName" name="personaName" required placeholder="e.g., Sarah Johnson">
+                        <small>Give your persona a real name to make them memorable</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personaRole">Role/Job Title *</label>
+                        <input type="text" id="personaRole" name="personaRole" required placeholder="e.g., Marketing Coordinator">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personaType">Persona Type *</label>
+                        <select id="personaType" name="personaType" required>
+                            <option value="">Select persona type...</option>
+                            <option value="employee">General Employee</option>
+                            <option value="manager">Manager</option>
+                            <option value="hr-admin">HR Administrator</option>
+                            <option value="executive">Executive/Leadership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personaQuote">Defining Quote *</label>
+                        <textarea id="personaQuote" name="personaQuote" required rows="2" placeholder="A real quote from user research that captures this persona's essence"></textarea>
+                        <small>Use an actual quote from your interviews that represents this persona</small>
+                    </div>
+                </div>
+
+                <!-- Demographics -->
+                <div class="form-section">
+                    <h3>2. Demographics & Context</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ageRange">Age Range</label>
+                            <select id="ageRange" name="ageRange">
+                                <option value="">Select range...</option>
+                                <option value="18-24">18-24</option>
+                                <option value="25-34">25-34</option>
+                                <option value="35-44">35-44</option>
+                                <option value="45-54">45-54</option>
+                                <option value="55-64">55-64</option>
+                                <option value="65+">65+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tenure">Company Tenure</label>
+                            <select id="tenure" name="tenure">
+                                <option value="">Select tenure...</option>
+                                <option value="0-6 months">0-6 months (New hire)</option>
+                                <option value="6 months - 2 years">6 months - 2 years</option>
+                                <option value="2-5 years">2-5 years</option>
+                                <option value="5-10 years">5-10 years</option>
+                                <option value="10+ years">10+ years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Department/Function</label>
+                            <input type="text" id="department" name="department" placeholder="e.g., Marketing, Sales, Engineering">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Work Location</label>
+                            <select id="location" name="location">
+                                <option value="">Select location type...</option>
+                                <option value="On-site">On-site</option>
+                                <option value="Remote">Remote</option>
+                                <option value="Hybrid">Hybrid</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Technical Proficiency</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="techLevel" value="low">
+                                <span>Low (Not comfortable with technology)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="techLevel" value="medium" checked>
+                                <span>Medium (Average technical skills)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="techLevel" value="high">
+                                <span>High (Very tech-savvy)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goals & Motivations -->
+                <div class="form-section">
+                    <h3>3. Goals & Motivations</h3>
+                    <p class="section-hint">What does this persona want to accomplish? What drives them?</p>
+
+                    <div class="form-group">
+                        <label for="goal1">Primary Goal 1 *</label>
+                        <input type="text" id="goal1" name="goal1" required placeholder="e.g., Get quick answers to HR questions without waiting">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal2">Primary Goal 2 *</label>
+                        <input type="text" id="goal2" name="goal2" required placeholder="e.g., Minimize time spent on administrative tasks">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal3">Primary Goal 3</label>
+                        <input type="text" id="goal3" name="goal3" placeholder="e.g., Stay informed about benefits and policies">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivations">Key Motivations</label>
+                        <textarea id="motivations" name="motivations" rows="3" placeholder="What motivates this persona? What do they care about in their work?"></textarea>
+                    </div>
+                </div>
+
+                <!-- Pain Points & Frustrations -->
+                <div class="form-section">
+                    <h3>4. Pain Points & Frustrations</h3>
+                    <p class="section-hint">What frustrates this persona in their current experience? Include supporting quotes from research.</p>
+
+                    <div class="form-group">
+                        <label for="pain1">Pain Point 1 *</label>
+                        <input type="text" id="pain1" name="pain1" required placeholder="e.g., HR information is scattered across multiple systems">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain1Quote">Supporting Quote for Pain Point 1</label>
+                        <textarea id="pain1Quote" name="pain1Quote" rows="2" placeholder="Real quote from interview: 'I have to check three different places just to find out how many vacation days I have left'"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain2">Pain Point 2 *</label>
+                        <input type="text" id="pain2" name="pain2" required placeholder="e.g., Long wait times for HR support responses">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain2Quote">Supporting Quote for Pain Point 2</label>
+                        <textarea id="pain2Quote" name="pain2Quote" rows="2" placeholder="Real quote from interview"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain3">Pain Point 3</label>
+                        <input type="text" id="pain3" name="pain3" placeholder="e.g., Unclear how policies apply to individual situations">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain3Quote">Supporting Quote for Pain Point 3</label>
+                        <textarea id="pain3Quote" name="pain3Quote" rows="2" placeholder="Real quote from interview"></textarea>
+                    </div>
+                </div>
+
+                <!-- Behaviors & Preferences -->
+                <div class="form-section">
+                    <h3>5. Behaviors & Preferences</h3>
+
+                    <div class="form-group">
+                        <label>Current HR Information Sources (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Ask HR directly">
+                                <span>Ask HR directly (email/phone)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Ask manager">
+                                <span>Ask manager</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Ask colleagues">
+                                <span>Ask colleagues</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Search intranet">
+                                <span>Search company intranet</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Check Workday">
+                                <span>Check Workday/HRIS</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="infoSources" value="Google it">
+                                <span>Google it / external search</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Communication Channels (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="commChannels" value="Email">
+                                <span>Email</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="commChannels" value="Slack/Teams">
+                                <span>Slack/Teams chat</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="commChannels" value="Phone">
+                                <span>Phone call</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="commChannels" value="In-person">
+                                <span>In-person</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="commChannels" value="Self-service">
+                                <span>Self-service tools</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="behaviors">Observed Behaviors</label>
+                        <textarea id="behaviors" name="behaviors" rows="4" placeholder="What behaviors did you observe in user research? How do they currently solve problems? Include specific examples."></textarea>
+                    </div>
+                </div>
+
+                <!-- Needs from HR AI Assistant -->
+                <div class="form-section">
+                    <h3>6. Needs from HR AI Assistant</h3>
+                    <p class="section-hint">Specific to this project: What does this persona need from the HR AI Assistant?</p>
+
+                    <div class="form-group">
+                        <label for="need1">Specific Need 1 *</label>
+                        <input type="text" id="need1" name="need1" required placeholder="e.g., Instant answers to common HR questions 24/7">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="need2">Specific Need 2 *</label>
+                        <input type="text" id="need2" name="need2" required placeholder="e.g., Personalized information relevant to my situation">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="need3">Specific Need 3</label>
+                        <input type="text" id="need3" name="need3" placeholder="e.g., Confidence that information is accurate and current">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="successCriteria">Success Criteria</label>
+                        <textarea id="successCriteria" name="successCriteria" rows="3" placeholder="How will we know we've successfully served this persona? What metrics matter to them?"></textarea>
+                    </div>
+                </div>
+
+                <!-- Use Case Scenarios -->
+                <div class="form-section">
+                    <h3>7. Use Case Scenarios</h3>
+                    <p class="section-hint">Specific scenarios where this persona would use the HR AI Assistant</p>
+
+                    <div class="form-group">
+                        <label for="scenario1">Scenario 1 *</label>
+                        <textarea id="scenario1" name="scenario1" required rows="2" placeholder="e.g., I need to find out how many vacation days I have left so that I can plan my summer vacation"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scenario2">Scenario 2 *</label>
+                        <textarea id="scenario2" name="scenario2" required rows="2" placeholder="e.g., I need to understand the parental leave policy so that I can plan for my upcoming family addition"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scenario3">Scenario 3</label>
+                        <textarea id="scenario3" name="scenario3" rows="2" placeholder="Additional scenario"></textarea>
+                    </div>
+                </div>
+
+                <!-- Research Validation -->
+                <div class="form-section">
+                    <h3>8. Research Validation</h3>
+
+                    <div class="form-group">
+                        <label for="interviewCount">Number of User Interviews Conducted *</label>
+                        <input type="number" id="interviewCount" name="interviewCount" required min="1" placeholder="e.g., 8">
+                        <small>Industry best practice: At least 5-8 interviews per persona type</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="researchMethods">Research Methods Used (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="researchMethods" value="User interviews">
+                                <span>User interviews</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="researchMethods" value="Contextual observation">
+                                <span>Contextual observation</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="researchMethods" value="Journey mapping">
+                                <span>Journey mapping workshop</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="researchMethods" value="Surveys">
+                                <span>Surveys</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="researchMethods" value="Analytics review">
+                                <span>Analytics/data review</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="researchNotes">Additional Research Notes</label>
+                        <textarea id="researchNotes" name="researchNotes" rows="3" placeholder="Any additional context, patterns, or insights from your research"></textarea>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="button" id="previewBtn" class="btn">Preview Persona</button>
+                    <button type="button" id="generatePdfBtn" class="btn btn-primary">Generate PDF</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Preview Section -->
+        <section id="previewSection" class="preview-section" style="display: none;">
+            <h2>Persona Preview</h2>
+            <div id="personaPreview" class="persona-preview-card"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HR AI Assistant Project | User-Centered Design Initiative</p>
+            <p>Last Updated: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <script src="js/persona-builder.js"></script>
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
